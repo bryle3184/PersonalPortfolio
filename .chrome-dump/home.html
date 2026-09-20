@@ -1,0 +1,1592 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231C1811'/%3E%3Ctext x='50' y='69' font-family='Georgia, serif' font-size='54' fill='%23E0431D' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+    <meta name="description" content="Mira Chen — product designer &amp; art director. Digital artefacts, drawn like printed matter.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+    <title>Mira Chen — Product Designer &amp; Art Director</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/kaylla/Downloads/PersonalPortfolio/src/index.css">/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --spacing: 0.25rem;
+    --container-xs: 20rem;
+    --container-sm: 24rem;
+    --container-md: 28rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --leading-snug: 1.375;
+    --leading-relaxed: 1.625;
+    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    --blur-md: 12px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-paper: #f1eada;
+    --color-cream: #faf6ea;
+    --color-ink: #1c1811;
+    --color-ink-soft: #6f6753;
+    --color-vermilion: #e0431d;
+    --color-olive: #7c6a3d;
+    --color-pine: #2f5d50;
+    --color-brass: #c07f2d;
+    --font-display: "Fraunces", ui-serif, Georgia, serif;
+    --font-grotesk: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring:where(:not(iframe)) {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .inset-0 {
+    inset: 0px;
+  }
+  .inset-x-0 {
+    inset-inline: 0px;
+  }
+  .top-0 {
+    top: 0px;
+  }
+  .top-24 {
+    top: calc(var(--spacing) * 24);
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-14 {
+    margin-top: calc(var(--spacing) * 14);
+  }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
+  .ml-1 {
+    margin-left: var(--spacing);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .aspect-\[2\/1\] {
+    aspect-ratio: 2/1;
+  }
+  .aspect-\[4\/3\] {
+    aspect-ratio: 4/3;
+  }
+  .h-2\.5 {
+    height: calc(var(--spacing) * 2.5);
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-3\.5 {
+    height: calc(var(--spacing) * 3.5);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-\[3px\] {
+    height: 3px;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .h-px {
+    height: 1px;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-2\.5 {
+    width: calc(var(--spacing) * 2.5);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\.5 {
+    width: calc(var(--spacing) * 3.5);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-11 {
+    width: calc(var(--spacing) * 11);
+  }
+  .w-fit {
+    width: fit-content;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .w-max {
+    width: max-content;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-\[1240px\] {
+    max-width: 1240px;
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+  .max-w-xs {
+    max-width: var(--container-xs);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .origin-left {
+    transform-origin: 0;
+  }
+  .translate-y-\[2px\] {
+    --tw-translate-y: 2px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-ping {
+    animation: var(--animate-ping);
+  }
+  .resize-none {
+    resize: none;
+  }
+  .scroll-mt-20 {
+    scroll-margin-top: calc(var(--spacing) * 20);
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .content-start {
+    align-content: flex-start;
+  }
+  .items-baseline {
+    align-items: baseline;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
+  }
+  .gap-px {
+    gap: 1px;
+  }
+  :where(.space-y-3 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-14 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 14) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 14) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  .gap-x-8 {
+    column-gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-14 {
+    row-gap: calc(var(--spacing) * 14);
+  }
+  :where(.divide-y > :not(:last-child)) {
+    --tw-divide-y-reverse: 0;
+    border-bottom-style: var(--tw-border-style);
+    border-top-style: var(--tw-border-style);
+    border-top-width: calc(1px * var(--tw-divide-y-reverse));
+    border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  }
+  :where(.divide-ink\/10 > :not(:last-child)) {
+    border-color: color-mix(in srgb, #1c1811 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-ink) 10%, transparent);
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-y {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 1px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .\!border-paper\/20 {
+    border-color: color-mix(in srgb, #f1eada 20%, transparent) !important;
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-paper) 20%, transparent) !important;
+    }
+  }
+  .border-cream\/20 {
+    border-color: color-mix(in srgb, #faf6ea 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cream) 20%, transparent);
+    }
+  }
+  .border-ink\/10 {
+    border-color: color-mix(in srgb, #1c1811 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-ink) 10%, transparent);
+    }
+  }
+  .border-ink\/15 {
+    border-color: color-mix(in srgb, #1c1811 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-ink) 15%, transparent);
+    }
+  }
+  .border-ink\/20 {
+    border-color: color-mix(in srgb, #1c1811 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-ink) 20%, transparent);
+    }
+  }
+  .border-ink\/25 {
+    border-color: color-mix(in srgb, #1c1811 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-ink) 25%, transparent);
+    }
+  }
+  .border-paper\/15 {
+    border-color: color-mix(in srgb, #f1eada 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-paper) 15%, transparent);
+    }
+  }
+  .border-paper\/20 {
+    border-color: color-mix(in srgb, #f1eada 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-paper) 20%, transparent);
+    }
+  }
+  .border-paper\/25 {
+    border-color: color-mix(in srgb, #f1eada 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-paper) 25%, transparent);
+    }
+  }
+  .bg-brass {
+    background-color: var(--color-brass);
+  }
+  .bg-cream {
+    background-color: var(--color-cream);
+  }
+  .bg-cream\/15 {
+    background-color: color-mix(in srgb, #faf6ea 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-cream) 15%, transparent);
+    }
+  }
+  .bg-ink {
+    background-color: var(--color-ink);
+  }
+  .bg-ink\/10 {
+    background-color: color-mix(in srgb, #1c1811 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-ink) 10%, transparent);
+    }
+  }
+  .bg-ink\/15 {
+    background-color: color-mix(in srgb, #1c1811 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-ink) 15%, transparent);
+    }
+  }
+  .bg-ink\/20 {
+    background-color: color-mix(in srgb, #1c1811 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-ink) 20%, transparent);
+    }
+  }
+  .bg-olive {
+    background-color: var(--color-olive);
+  }
+  .bg-paper {
+    background-color: var(--color-paper);
+  }
+  .bg-paper\/15 {
+    background-color: color-mix(in srgb, #f1eada 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-paper) 15%, transparent);
+    }
+  }
+  .bg-paper\/25 {
+    background-color: color-mix(in srgb, #f1eada 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-paper) 25%, transparent);
+    }
+  }
+  .bg-paper\/85 {
+    background-color: color-mix(in srgb, #f1eada 85%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-paper) 85%, transparent);
+    }
+  }
+  .bg-pine {
+    background-color: var(--color-pine);
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-vermilion {
+    background-color: var(--color-vermilion);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3\.5 {
+    padding-block: calc(var(--spacing) * 3.5);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
+  }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-14 {
+    padding-top: calc(var(--spacing) * 14);
+  }
+  .pt-\[6\.5rem\] {
+    padding-top: 6.5rem;
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-grotesk {
+    font-family: var(--font-grotesk);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .leading-\[0\.95\] {
+    --tw-leading: 0.95;
+    line-height: 0.95;
+  }
+  .leading-\[1\.0\] {
+    --tw-leading: 1.0;
+    line-height: 1.0;
+  }
+  .leading-\[1\.02\] {
+    --tw-leading: 1.02;
+    line-height: 1.02;
+  }
+  .leading-\[1\.05\] {
+    --tw-leading: 1.05;
+    line-height: 1.05;
+  }
+  .leading-\[1\.15\] {
+    --tw-leading: 1.15;
+    line-height: 1.15;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .leading-snug {
+    --tw-leading: var(--leading-snug);
+    line-height: var(--leading-snug);
+  }
+  .font-\[400\] {
+    --tw-font-weight: 400;
+    font-weight: 400;
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[-0\.01em\] {
+    --tw-tracking: -0.01em;
+    letter-spacing: -0.01em;
+  }
+  .tracking-\[0\.2em\] {
+    --tw-tracking: 0.2em;
+    letter-spacing: 0.2em;
+  }
+  .tracking-\[0\.3em\] {
+    --tw-tracking: 0.3em;
+    letter-spacing: 0.3em;
+  }
+  .tracking-\[0\.14em\] {
+    --tw-tracking: 0.14em;
+    letter-spacing: 0.14em;
+  }
+  .tracking-\[0\.16em\] {
+    --tw-tracking: 0.16em;
+    letter-spacing: 0.16em;
+  }
+  .tracking-\[0\.18em\] {
+    --tw-tracking: 0.18em;
+    letter-spacing: 0.18em;
+  }
+  .\!text-paper {
+    color: var(--color-paper) !important;
+  }
+  .\!text-paper\/40 {
+    color: color-mix(in srgb, #f1eada 40%, transparent) !important;
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-paper) 40%, transparent) !important;
+    }
+  }
+  .\!text-paper\/60 {
+    color: color-mix(in srgb, #f1eada 60%, transparent) !important;
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-paper) 60%, transparent) !important;
+    }
+  }
+  .\!text-paper\/70 {
+    color: color-mix(in srgb, #f1eada 70%, transparent) !important;
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-paper) 70%, transparent) !important;
+    }
+  }
+  .text-cream {
+    color: var(--color-cream);
+  }
+  .text-ink {
+    color: var(--color-ink);
+  }
+  .text-ink-soft {
+    color: var(--color-ink-soft);
+  }
+  .text-paper {
+    color: var(--color-paper);
+  }
+  .text-paper\/40 {
+    color: color-mix(in srgb, #f1eada 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-paper) 40%, transparent);
+    }
+  }
+  .text-paper\/60 {
+    color: color-mix(in srgb, #f1eada 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-paper) 60%, transparent);
+    }
+  }
+  .text-paper\/70 {
+    color: color-mix(in srgb, #f1eada 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-paper) 70%, transparent);
+    }
+  }
+  .text-paper\/80 {
+    color: color-mix(in srgb, #f1eada 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-paper) 80%, transparent);
+    }
+  }
+  .text-vermilion {
+    color: var(--color-vermilion);
+  }
+  .text-vermilion\/80 {
+    color: color-mix(in srgb, #e0431d 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-vermilion) 80%, transparent);
+    }
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .tabular-nums {
+    --tw-numeric-spacing: tabular-nums;
+    font-variant-numeric: var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,);
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .opacity-60 {
+    opacity: 60%;
+  }
+  .opacity-80 {
+    opacity: 80%;
+  }
+  .opacity-90 {
+    opacity: 90%;
+  }
+  .opacity-100 {
+    opacity: 100%;
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  @media (hover: hover) {
+    .group-hover\:-translate-x-1:is(:where(.group):hover *) {
+      --tw-translate-x: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .group-hover\:translate-x-0\.5:is(:where(.group):hover *) {
+      --tw-translate-x: calc(var(--spacing) * 0.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .group-hover\:translate-x-1:is(:where(.group):hover *) {
+      --tw-translate-x: var(--spacing);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .group-hover\:-translate-y-0\.5:is(:where(.group):hover *) {
+      --tw-translate-y: calc(var(--spacing) * -0.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .group-hover\:rotate-45:is(:where(.group):hover *) {
+      rotate: 45deg;
+    }
+    .group-hover\:text-vermilion:is(:where(.group):hover *) {
+      color: var(--color-vermilion);
+    }
+    .group-hover\:opacity-100:is(:where(.group):hover *) {
+      opacity: 100%;
+    }
+    .group-hover\:opacity-\[0\.08\]:is(:where(.group):hover *) {
+      opacity: 0.08;
+    }
+  }
+  .placeholder\:\!text-paper\/30::placeholder {
+    color: color-mix(in srgb, #f1eada 30%, transparent) !important;
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-paper) 30%, transparent) !important;
+    }
+  }
+  .last\:border-b:last-child {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  @media (hover: hover) {
+    .hover\:\!border-vermilion:hover {
+      border-color: var(--color-vermilion) !important;
+    }
+    .hover\:border-vermilion:hover {
+      border-color: var(--color-vermilion);
+    }
+    .hover\:bg-cream:hover {
+      background-color: var(--color-cream);
+    }
+    .hover\:bg-ink:hover {
+      background-color: var(--color-ink);
+    }
+    .hover\:bg-paper:hover {
+      background-color: var(--color-paper);
+    }
+    .hover\:\!text-vermilion:hover {
+      color: var(--color-vermilion) !important;
+    }
+    .hover\:text-ink:hover {
+      color: var(--color-ink);
+    }
+    .hover\:text-paper:hover {
+      color: var(--color-paper);
+    }
+    .hover\:text-vermilion:hover {
+      color: var(--color-vermilion);
+    }
+  }
+  .disabled\:opacity-60:disabled {
+    opacity: 60%;
+  }
+  @media (width >= 40rem) {
+    .sm\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+    .sm\:col-span-3 {
+      grid-column: span 3 / span 3;
+    }
+    .sm\:col-span-6 {
+      grid-column: span 6 / span 6;
+    }
+    .sm\:col-span-7 {
+      grid-column: span 7 / span 7;
+    }
+    .sm\:block {
+      display: block;
+    }
+    .sm\:aspect-\[10\/5\] {
+      aspect-ratio: 10/5;
+    }
+    .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .sm\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .sm\:grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .sm\:flex-row {
+      flex-direction: row;
+    }
+    .sm\:items-baseline {
+      align-items: baseline;
+    }
+    .sm\:items-center {
+      align-items: center;
+    }
+    .sm\:justify-between {
+      justify-content: space-between;
+    }
+    .sm\:justify-end {
+      justify-content: flex-end;
+    }
+    .sm\:gap-6 {
+      gap: calc(var(--spacing) * 6);
+    }
+    .sm\:p-7 {
+      padding: calc(var(--spacing) * 7);
+    }
+    .sm\:p-8 {
+      padding: calc(var(--spacing) * 8);
+    }
+    .sm\:px-8 {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+    .sm\:pt-12 {
+      padding-top: calc(var(--spacing) * 12);
+    }
+    .sm\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+    .sm\:text-3xl {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+    .sm\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+    .sm\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+    .sm\:text-6xl {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+    .sm\:text-8xl {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+    .sm\:text-lg {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+    .sm\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  @media (width >= 48rem) {
+    .md\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (width >= 64rem) {
+    .lg\:col-span-4 {
+      grid-column: span 4 / span 4;
+    }
+    .lg\:col-span-5 {
+      grid-column: span 5 / span 5;
+    }
+    .lg\:col-span-6 {
+      grid-column: span 6 / span 6;
+    }
+    .lg\:col-span-7 {
+      grid-column: span 7 / span 7;
+    }
+    .lg\:col-span-8 {
+      grid-column: span 8 / span 8;
+    }
+    .lg\:block {
+      display: block;
+    }
+    .lg\:flex {
+      display: flex;
+    }
+    .lg\:hidden {
+      display: none;
+    }
+    .lg\:grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .lg\:gap-8 {
+      gap: calc(var(--spacing) * 8);
+    }
+    .lg\:py-20 {
+      padding-block: calc(var(--spacing) * 20);
+    }
+    .lg\:py-24 {
+      padding-block: calc(var(--spacing) * 24);
+    }
+    .lg\:pt-20 {
+      padding-top: calc(var(--spacing) * 20);
+    }
+    .lg\:pt-\[8\.5rem\] {
+      padding-top: 8.5rem;
+    }
+    .lg\:pb-24 {
+      padding-bottom: calc(var(--spacing) * 24);
+    }
+  }
+  @media (width >= 80rem) {
+    .xl\:text-\[5\.25rem\] {
+      font-size: 5.25rem;
+    }
+  }
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-paper);
+    font-family: var(--font-grotesk);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: repeating-linear-gradient( 0deg, color-mix(in srgb, #1c1811 2.2%, transparent) 0 1px, transparent 1px 96px );
+    @supports (color: color-mix(in lab, red, red)) {
+      background-image: repeating-linear-gradient( 0deg, color-mix(in srgb, var(--color-ink) 2.2%, transparent) 0 1px, transparent 1px 96px );
+    }
+  }
+  ::selection {
+    background: var(--color-vermilion);
+    color: var(--color-cream);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-paper);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, #1c1811 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background: color-mix(in srgb, var(--color-ink) 30%, transparent);
+    }
+  }
+}
+@layer components {
+  .label {
+    font-family: var(--font-grotesk);
+    font-size: 11px;
+    --tw-tracking: 0.24em;
+    letter-spacing: 0.24em;
+    color: var(--color-ink-soft);
+    text-transform: uppercase;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 2);
+    border-radius: calc(infinity * 1px);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: color-mix(in srgb, #1c1811 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-ink) 15%, transparent);
+    }
+    padding-inline: calc(var(--spacing) * 3.5);
+    padding-block: calc(var(--spacing) * 1.5);
+    font-family: var(--font-grotesk);
+    font-size: 11px;
+    --tw-tracking: 0.14em;
+    letter-spacing: 0.14em;
+    color: var(--color-ink-soft);
+    text-transform: uppercase;
+  }
+  .input {
+    width: 100%;
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    background-color: transparent;
+    padding-inline: 0px;
+    padding-block: calc(var(--spacing) * 3);
+    font-family: var(--font-grotesk);
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+    color: var(--color-ink);
+    border-color: color-mix(in srgb, #1c1811 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in srgb, var(--color-ink) 25%, transparent);
+    }
+    transition: border-color 0.3s ease;
+  }
+  .input:focus {
+    outline: none;
+    border-color: var(--color-vermilion);
+  }
+  .input::placeholder {
+    color: color-mix(in srgb, #6f6753 55%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in srgb, var(--color-ink-soft) 55%, transparent);
+    }
+  }
+  .btn-solid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 2);
+    background-color: var(--color-ink);
+    padding-inline: calc(var(--spacing) * 6);
+    padding-block: calc(var(--spacing) * 3.5);
+    font-family: var(--font-grotesk);
+    font-size: 11px;
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    --tw-tracking: 0.18em;
+    letter-spacing: 0.18em;
+    color: var(--color-paper);
+    text-transform: uppercase;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-vermilion);
+      }
+    }
+  }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 2);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: color-mix(in srgb, #1c1811 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-ink) 25%, transparent);
+    }
+    padding-inline: calc(var(--spacing) * 6);
+    padding-block: calc(var(--spacing) * 3.5);
+    font-family: var(--font-grotesk);
+    font-size: 11px;
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    --tw-tracking: 0.18em;
+    letter-spacing: 0.18em;
+    color: var(--color-ink);
+    text-transform: uppercase;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-ink);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-ink);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-paper);
+      }
+    }
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-divide-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-fraction {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-divide-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-ordinal: initial;
+      --tw-slashed-zero: initial;
+      --tw-numeric-figure: initial;
+      --tw-numeric-spacing: initial;
+      --tw-numeric-fraction: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+    }
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><div aria-hidden="true" class="pointer-events-none fixed inset-x-0 top-0 z-50 h-[3px] bg-ink/10"><div class="h-full origin-left bg-vermilion" style="transform: scaleX(0);"></div></div><div class="min-h-screen"><header class="sticky top-0 z-40 border-b border-ink/15 bg-paper/85 backdrop-blur-md"><div class="mx-auto flex h-16 max-w-[1240px] items-center justify-between px-5 sm:px-8"><button class="group flex items-baseline gap-2 font-grotesk text-sm font-semibold uppercase tracking-[0.18em]">Mira Chen<span class="text-vermilion">©</span><span class="text-xs font-normal tracking-[0.14em] text-ink-soft transition-colors group-hover:text-vermilion">Portfolio — 2015/2026</span></button><nav class="hidden items-center gap-7 lg:flex" aria-label="Primary"><button class="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:text-ink"><span class="text-vermilion/80 tabular-nums group-hover:text-vermilion">01</span>Work</button><button class="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:text-ink"><span class="text-vermilion/80 tabular-nums group-hover:text-vermilion">02</span>About</button><button class="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:text-ink"><span class="text-vermilion/80 tabular-nums group-hover:text-vermilion">03</span>Experience</button><button class="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:text-ink"><span class="text-vermilion/80 tabular-nums group-hover:text-vermilion">04</span>Skills</button><button class="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:text-ink"><span class="text-vermilion/80 tabular-nums group-hover:text-vermilion">05</span>Credentials</button><button class="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:text-ink"><span class="text-vermilion/80 tabular-nums group-hover:text-vermilion">06</span>Contact</button><button class="ml-1 inline-flex items-center gap-1.5 border border-ink/25 px-4 py-2 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:bg-ink hover:text-paper">Let's talk<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3.5 w-3.5" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button></nav><button class="flex h-10 w-10 items-center justify-center border border-ink/20 lg:hidden" aria-label="Open menu" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5" aria-hidden="true"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg></button></div></header><div class="fixed inset-0 z-50 flex flex-col justify-between bg-paper transition-opacity duration-300 lg:hidden pointer-events-none opacity-0" aria-hidden="true"><div class="mx-auto flex w-full max-w-[1240px] items-center justify-between px-5 pt-4 sm:px-8"><span class="font-grotesk text-sm font-semibold uppercase tracking-[0.18em]">Mira Chen</span><button class="flex h-10 w-10 items-center justify-center border border-ink/20" aria-label="Close menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x h-5 w-5" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button></div><nav class="mx-auto w-full max-w-[1240px] flex-1 px-5 sm:px-8" aria-label="Mobile"><ul class="flex flex-col divide-y divide-ink/10"><li><button class="group flex w-full items-baseline justify-between py-5 text-left"><span class="font-display text-4xl text-ink transition-colors group-hover:text-vermilion">Work</span><span class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft tabular-nums">01</span></button></li><li><button class="group flex w-full items-baseline justify-between py-5 text-left"><span class="font-display text-4xl text-ink transition-colors group-hover:text-vermilion">About</span><span class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft tabular-nums">02</span></button></li><li><button class="group flex w-full items-baseline justify-between py-5 text-left"><span class="font-display text-4xl text-ink transition-colors group-hover:text-vermilion">Experience</span><span class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft tabular-nums">03</span></button></li><li><button class="group flex w-full items-baseline justify-between py-5 text-left"><span class="font-display text-4xl text-ink transition-colors group-hover:text-vermilion">Skills</span><span class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft tabular-nums">04</span></button></li><li><button class="group flex w-full items-baseline justify-between py-5 text-left"><span class="font-display text-4xl text-ink transition-colors group-hover:text-vermilion">Credentials</span><span class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft tabular-nums">05</span></button></li><li><button class="group flex w-full items-baseline justify-between py-5 text-left"><span class="font-display text-4xl text-ink transition-colors group-hover:text-vermilion">Contact</span><span class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft tabular-nums">06</span></button></li></ul></nav><div class="border-t border-ink/10 px-5 py-6 sm:px-8"><a class="font-display text-lg italic text-ink" href="/" data-discover="true">Product Designer &amp; Art Director</a></div></div><main><header id="top" class="border-b border-ink/15"><div class="mx-auto max-w-[1240px] px-5 pb-16 pt-[6.5rem] sm:px-8 lg:pb-24 lg:pt-[8.5rem]"><div class="grid gap-14 lg:grid-cols-12 lg:gap-8"><div class="lg:col-span-8"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 1; transform: translateY(0px);"><p class="label flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk h-3.5 w-3.5 text-vermilion" aria-hidden="true"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg><span class="text-vermilion tabular-nums">Vol. 06 — 2026</span><span class="h-px w-8 bg-ink/20" aria-hidden="true"></span><span>Independent practice</span></p></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms; opacity: 1; transform: translateY(0px);"><h1 class="mt-8 font-display text-5xl font-light leading-[1.02] tracking-[-0.01em] sm:text-6xl xl:text-[5.25rem]">Digital artefacts,<br>drawn like <em class="font-[400] italic text-vermilion">printed matter</em>.</h1></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms; opacity: 1; transform: translateY(0px);"><p class="mt-8 max-w-xl font-grotesk text-base leading-relaxed text-ink-soft sm:text-lg">I'm Mira — a product designer and art director in New York. For the last decade I've helped startups, studios, and cultural institutions turn complex problems into interfaces that feel warm, exact, and quietly human.</p></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 240ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 240ms; opacity: 0; transform: translateY(28px);"><p class="mt-4 flex items-center gap-3 font-grotesk text-sm text-ink"><span class="relative flex h-2.5 w-2.5"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-vermilion opacity-60"></span><span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-vermilion"></span></span>Available for selected work — Q4 2026</p></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 320ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 320ms; opacity: 0; transform: translateY(28px);"><div class="mt-10 flex flex-wrap items-center gap-4"><a href="#contact" class="btn-solid">Start a project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="#work" class="btn-outline">See selected works<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down h-4 w-4" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a></div></div></div><div class="lg:col-span-4"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms; opacity: 0; transform: translateY(28px);"><nav class="border-t border-ink/15"><p class="label py-4">Contents</p><ul><li class="border-t border-ink/15"><a href="#work" class="group flex items-baseline justify-between gap-4 py-3.5"><span class="flex items-baseline gap-3"><span class="font-grotesk text-xs text-vermilion tabular-nums">01</span><span class="font-display text-base text-ink transition-colors group-hover:text-vermilion">Selected works</span></span><span class="hidden font-grotesk text-[10px] uppercase tracking-[0.16em] text-ink-soft sm:block">6 artefacts</span></a></li><li class="border-t border-ink/15"><a href="#about" class="group flex items-baseline justify-between gap-4 py-3.5"><span class="flex items-baseline gap-3"><span class="font-grotesk text-xs text-vermilion tabular-nums">02</span><span class="font-display text-base text-ink transition-colors group-hover:text-vermilion">About &amp; principles</span></span><span class="hidden font-grotesk text-[10px] uppercase tracking-[0.16em] text-ink-soft sm:block">a colophon</span></a></li><li class="border-t border-ink/15"><a href="#experience" class="group flex items-baseline justify-between gap-4 py-3.5"><span class="flex items-baseline gap-3"><span class="font-grotesk text-xs text-vermilion tabular-nums">03</span><span class="font-display text-base text-ink transition-colors group-hover:text-vermilion">Experience</span></span><span class="hidden font-grotesk text-[10px] uppercase tracking-[0.16em] text-ink-soft sm:block">2015 — present</span></a></li><li class="border-t border-ink/15"><a href="#skills" class="group flex items-baseline justify-between gap-4 py-3.5"><span class="flex items-baseline gap-3"><span class="font-grotesk text-xs text-vermilion tabular-nums">04</span><span class="font-display text-base text-ink transition-colors group-hover:text-vermilion">Capabilities</span></span><span class="hidden font-grotesk text-[10px] uppercase tracking-[0.16em] text-ink-soft sm:block">three shelves</span></a></li><li class="border-t border-ink/15"><a href="#credentials" class="group flex items-baseline justify-between gap-4 py-3.5"><span class="flex items-baseline gap-3"><span class="font-grotesk text-xs text-vermilion tabular-nums">05</span><span class="font-display text-base text-ink transition-colors group-hover:text-vermilion">Credentials</span></span><span class="hidden font-grotesk text-[10px] uppercase tracking-[0.16em] text-ink-soft sm:block">ledger</span></a></li><li class="border-t border-ink/15"><a href="#contact" class="group flex items-baseline justify-between gap-4 py-3.5"><span class="flex items-baseline gap-3"><span class="font-grotesk text-xs text-vermilion tabular-nums">06</span><span class="font-display text-base text-ink transition-colors group-hover:text-vermilion">Contact</span></span><span class="hidden font-grotesk text-[10px] uppercase tracking-[0.16em] text-ink-soft sm:block">open a thread</span></a></li></ul></nav></div></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 360ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 360ms; opacity: 0; transform: translateY(28px);"><div class="mt-16 hidden overflow-hidden border-y border-ink/15 py-2 lg:block"><p class="text-center font-grotesk text-[11px] uppercase tracking-[0.3em] text-ink-soft">Selected works  ·  Made by hand  ·  Interfaces &amp; identities  ·  Designed in New York  ·  Since 2015  ·  Systems, not screens</p></div></div></div></header><div class="relative overflow-hidden border-y border-ink/15 bg-ink text-paper" aria-hidden="true"><div class="flex w-max py-3.5" style="animation: 42s linear 0s infinite normal none running marquee;"><div class="flex shrink-0 items-center"><span class="flex items-center font-display text-lg italic"><span class="px-6">Selected works</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Made by hand</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Interfaces &amp; identities</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Designed in New York</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Since 2015</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Systems, not screens</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></div><div class="flex shrink-0 items-center"><span class="flex items-center font-display text-lg italic"><span class="px-6">Selected works</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Made by hand</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Interfaces &amp; identities</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Designed in New York</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Since 2015</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Systems, not screens</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></div></div></div><section id="work" class="scroll-mt-20 border-b border-ink/15"><div class="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><div class="flex flex-wrap items-end justify-between gap-4"><p class="label flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk h-3.5 w-3.5 text-vermilion" aria-hidden="true"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg><span class="text-vermilion tabular-nums">01</span><span class="h-px w-8 bg-ink/20" aria-hidden="true"></span><span>Selected works</span></p><p class="label">6 artefacts — 2023–2026</p></div></div><div class="mt-10 grid gap-x-8 gap-y-14 md:grid-cols-2"><div class="md:col-span-2" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><a class="group block" aria-label="Meridian — Fintech · Mobile &amp; web" href="/work/meridian" data-discover="true"><div class="relative overflow-hidden bg-vermilion text-paper aspect-[2/1] sm:aspect-[10/5]"><div class="absolute inset-0 flex flex-col justify-between p-5 sm:p-7"><div class="flex items-start justify-between gap-4 text-paper"><span class="bg-paper/15 rounded-full px-3 py-1 font-grotesk text-[10px] uppercase tracking-[0.16em]">01 — Fintech · Mobile &amp; web</span><span class="font-grotesk text-xs uppercase tracking-[0.16em] opacity-80">2026</span></div><div class="flex items-end justify-between gap-4"><h3 class="font-display leading-[0.95] tracking-[-0.01em] text-4xl sm:text-6xl">Meridian</h3><span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-paper/15 transition-transform duration-300 group-hover:rotate-45"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-5 w-5 text-paper" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></div></div><div class="pointer-events-none absolute inset-0 bg-ink opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]"></div></div><div class="flex items-baseline justify-between border-b border-ink/15 pt-3 border-paper/20"><span class="font-display text-base italic text-ink">A calm banking companion for small-business owners — cash in, cash out, no jargon, no panic.</span><span class="shrink-0 font-grotesk text-[11px] uppercase tracking-[0.16em] text-ink-soft">Lead product design</span></div></a></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 70ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 70ms; opacity: 0; transform: translateY(28px);"><a class="group block" aria-label="Wavelength — Audio · Social app" href="/work/wavelength" data-discover="true"><div class="relative overflow-hidden bg-ink text-paper aspect-[4/3]"><div class="absolute inset-0 flex flex-col justify-between p-5 sm:p-7"><div class="flex items-start justify-between gap-4 text-paper"><span class="bg-paper/15 rounded-full px-3 py-1 font-grotesk text-[10px] uppercase tracking-[0.16em]">02 — Audio · Social app</span><span class="font-grotesk text-xs uppercase tracking-[0.16em] opacity-80">2025</span></div><div class="flex items-end justify-between gap-4"><h3 class="font-display leading-[0.95] tracking-[-0.01em] text-3xl sm:text-4xl">Wavelength</h3><span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-paper/15 transition-transform duration-300 group-hover:rotate-45"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-5 w-5 text-paper" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></div></div><div class="pointer-events-none absolute inset-0 bg-ink opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]"></div></div><div class="flex items-baseline justify-between border-b border-ink/15 pt-3 border-paper/20"><span class="font-display text-base italic text-ink">A quieter alternative to the feed — audio conversations that people actually finish.</span><span class="shrink-0 font-grotesk text-[11px] uppercase tracking-[0.16em] text-ink-soft">Product design</span></div></a></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><a class="group block" aria-label="Common Room — Workspace · Platform" href="/work/common-room" data-discover="true"><div class="relative overflow-hidden bg-olive text-cream aspect-[4/3]"><div class="absolute inset-0 flex flex-col justify-between p-5 sm:p-7"><div class="flex items-start justify-between gap-4 text-cream"><span class="bg-cream/15 rounded-full px-3 py-1 font-grotesk text-[10px] uppercase tracking-[0.16em]">03 — Workspace · Platform</span><span class="font-grotesk text-xs uppercase tracking-[0.16em] opacity-80">2024</span></div><div class="flex items-end justify-between gap-4"><h3 class="font-display leading-[0.95] tracking-[-0.01em] text-3xl sm:text-4xl">Common Room</h3><span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-cream/15 transition-transform duration-300 group-hover:rotate-45"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-5 w-5 text-cream" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></div></div><div class="pointer-events-none absolute inset-0 bg-ink opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]"></div></div><div class="flex items-baseline justify-between border-b border-ink/15 pt-3 border-cream/20"><span class="font-display text-base italic text-ink">Booking and wayfinding for a national network of member workspaces — one legible system, forty rooms.</span><span class="shrink-0 font-grotesk text-[11px] uppercase tracking-[0.16em] text-ink-soft">Design lead</span></div></a></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 70ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 70ms; opacity: 0; transform: translateY(28px);"><a class="group block" aria-label="Loom &amp; Oak — E-commerce · Brand" href="/work/loom-oak" data-discover="true"><div class="relative overflow-hidden bg-brass text-ink aspect-[4/3]"><div class="absolute inset-0 flex flex-col justify-between p-5 sm:p-7"><div class="flex items-start justify-between gap-4 text-ink"><span class="bg-ink/10 rounded-full px-3 py-1 font-grotesk text-[10px] uppercase tracking-[0.16em]">04 — E-commerce · Brand</span><span class="font-grotesk text-xs uppercase tracking-[0.16em] opacity-80">2024</span></div><div class="flex items-end justify-between gap-4"><h3 class="font-display leading-[0.95] tracking-[-0.01em] text-3xl sm:text-4xl">Loom &amp; Oak</h3><span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-ink/10 transition-transform duration-300 group-hover:rotate-45"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-5 w-5 text-ink" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></div></div><div class="pointer-events-none absolute inset-0 bg-ink opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]"></div></div><div class="flex items-baseline justify-between border-b border-ink/15 pt-3 border-ink/15"><span class="font-display text-base italic text-ink">A made-by-hand goods brand with a storefront that feels like walking into the workshop.</span><span class="shrink-0 font-grotesk text-[11px] uppercase tracking-[0.16em] text-ink-soft">Art direction</span></div></a></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><a class="group block" aria-label="Signal — Health · Data" href="/work/signal" data-discover="true"><div class="relative overflow-hidden bg-pine text-paper aspect-[4/3]"><div class="absolute inset-0 flex flex-col justify-between p-5 sm:p-7"><div class="flex items-start justify-between gap-4 text-paper"><span class="bg-paper/15 rounded-full px-3 py-1 font-grotesk text-[10px] uppercase tracking-[0.16em]">05 — Health · Data</span><span class="font-grotesk text-xs uppercase tracking-[0.16em] opacity-80">2023</span></div><div class="flex items-end justify-between gap-4"><h3 class="font-display leading-[0.95] tracking-[-0.01em] text-3xl sm:text-4xl">Signal</h3><span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-paper/15 transition-transform duration-300 group-hover:rotate-45"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-5 w-5 text-paper" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></div></div><div class="pointer-events-none absolute inset-0 bg-ink opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]"></div></div><div class="flex items-baseline justify-between border-b border-ink/15 pt-3 border-paper/20"><span class="font-display text-base italic text-ink">A sleep and recovery dashboard that tells one honest story per night — not a spreadsheet of guilt.</span><span class="shrink-0 font-grotesk text-[11px] uppercase tracking-[0.16em] text-ink-soft">Product design</span></div></a></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 70ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 70ms; opacity: 0; transform: translateY(28px);"><a class="group block" aria-label="Fieldnotes — Knowledge · Tool" href="/work/fieldnotes" data-discover="true"><div class="relative overflow-hidden bg-cream text-ink aspect-[4/3]"><div class="absolute inset-0 flex flex-col justify-between p-5 sm:p-7"><div class="flex items-start justify-between gap-4 text-ink"><span class="bg-ink/10 rounded-full px-3 py-1 font-grotesk text-[10px] uppercase tracking-[0.16em]">06 — Knowledge · Tool</span><span class="font-grotesk text-xs uppercase tracking-[0.16em] opacity-80">2023</span></div><div class="flex items-end justify-between gap-4"><h3 class="font-display leading-[0.95] tracking-[-0.01em] text-3xl sm:text-4xl">Fieldnotes</h3><span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-ink/10 transition-transform duration-300 group-hover:rotate-45"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-5 w-5 text-ink" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span></div></div><div class="pointer-events-none absolute inset-0 bg-ink opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]"></div></div><div class="flex items-baseline justify-between border-b border-ink/15 pt-3 border-ink/15"><span class="font-display text-base italic text-ink">A note-taking tool for researchers that makes messy fieldwork legible — without making it tidy.</span><span class="shrink-0 font-grotesk text-[11px] uppercase tracking-[0.16em] text-ink-soft">Product design</span></div></a></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><div class="mt-14 border-t border-ink/15 pt-8"><a class="btn-outline group" href="/#contact" data-discover="true">Have a project in mind?<span class="transition-transform duration-300 group-hover:translate-x-1">→</span></a></div></div></div></section><section id="about" class="scroll-mt-20 border-b border-ink/15"><div class="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><p class="label flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk h-3.5 w-3.5 text-vermilion" aria-hidden="true"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg><span class="text-vermilion tabular-nums">02</span><span class="h-px w-8 bg-ink/20" aria-hidden="true"></span><span>About &amp; principles</span></p></div><div class="mt-10 grid gap-12 lg:grid-cols-12"><div class="lg:col-span-7"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms; opacity: 0; transform: translateY(28px);"><p class="font-display text-3xl font-light leading-[1.15] tracking-[-0.01em] sm:text-4xl">I care about the <em class="italic text-vermilion">objects people live with</em> — the screens, systems, and printed things that shape the texture of a working day.</p></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms; opacity: 0; transform: translateY(28px);"><p class="mt-6 max-w-xl font-grotesk text-base leading-relaxed text-ink-soft">I'm Mira — a product designer and art director in New York. For the last decade I've helped startups, studios, and cultural institutions turn complex problems into interfaces that feel warm, exact, and quietly human. The overlap of editorial craft and product thinking is where I do my best work: interfaces with a point of view, identities with a spine, systems that hold a thousand screens together without crushing the first one.</p></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 240ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 240ms; opacity: 0; transform: translateY(28px);"><dl class="mt-10 grid grid-cols-2 gap-px overflow-hidden border border-ink/15 bg-ink/15 sm:grid-cols-4"><div class="bg-paper p-4"><dt class="label text-[10px]">Based in</dt><dd class="mt-2 font-display text-sm text-ink">New York, NY</dd></div><div class="bg-paper p-4"><dt class="label text-[10px]">Practice</dt><dd class="mt-2 font-display text-sm text-ink">2015 — present</dd></div><div class="bg-paper p-4"><dt class="label text-[10px]">Focus</dt><dd class="mt-2 font-display text-sm text-ink">Product · Editorial · Brand</dd></div><div class="bg-paper p-4"><dt class="label text-[10px]">Shipped</dt><dd class="mt-2 font-display text-sm text-ink">40+ products &amp; sites</dd></div></dl></div></div><div class="lg:col-span-5"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms; opacity: 0; transform: translateY(28px);"><div class="border border-ink/15 bg-cream p-6 sm:p-8"><p class="label">The working method</p><ol class="mt-6 space-y-5"><li class="flex gap-4 border-t border-ink/15 pt-4"><span class="font-grotesk text-xs text-vermilion tabular-nums">01</span><span class="font-display text-xl italic text-ink">Listen louder than you speak.</span></li><li class="flex gap-4 border-t border-ink/15 pt-4"><span class="font-grotesk text-xs text-vermilion tabular-nums">02</span><span class="font-display text-xl italic text-ink">Design the system, not the screen.</span></li><li class="flex gap-4 border-t border-ink/15 pt-4"><span class="font-grotesk text-xs text-vermilion tabular-nums">03</span><span class="font-display text-xl italic text-ink">Craft is a form of respect.</span></li><li class="flex gap-4 border-t border-ink/15 pt-4"><span class="font-grotesk text-xs text-vermilion tabular-nums">04</span><span class="font-display text-xl italic text-ink">Ship things people can hold onto.</span></li></ol></div></div></div></div></div></section><section id="experience" class="scroll-mt-20 border-b border-ink/15"><div class="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><div class="flex flex-wrap items-end justify-between gap-4"><p class="label flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk h-3.5 w-3.5 text-vermilion" aria-hidden="true"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg><span class="text-vermilion tabular-nums">03</span><span class="h-px w-8 bg-ink/20" aria-hidden="true"></span><span>Experience</span></p><p class="label">4 engagements</p></div></div><div class="mt-10"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><article class="group grid gap-4 border-t border-ink/15 py-8 transition-colors last:border-b sm:grid-cols-12 sm:gap-6"><p class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft sm:col-span-3">2022 — Present</p><div class="sm:col-span-6"><h3 class="font-display text-2xl text-ink transition-colors group-hover:text-vermilion sm:text-3xl">Product Designer &amp; Art Director</h3><p class="mt-1 font-grotesk text-sm font-semibold uppercase tracking-[0.14em] text-ink">Independent</p><p class="mt-3 max-w-xl font-grotesk text-sm leading-relaxed text-ink-soft">A small studio practice partnering with early-stage teams and cultural institutions — from first principles to shipped product, plus the identity to carry it.</p></div><div class="flex flex-wrap content-start gap-2 sm:col-span-3 sm:justify-end"><span class="chip">Design systems</span><span class="chip">Web platforms</span><span class="chip">Brand identity</span><span class="chip">Product strategy</span></div></article></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 60ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 60ms; opacity: 0; transform: translateY(28px);"><article class="group grid gap-4 border-t border-ink/15 py-8 transition-colors last:border-b sm:grid-cols-12 sm:gap-6"><p class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft sm:col-span-3">2019 — 2022</p><div class="sm:col-span-6"><h3 class="font-display text-2xl text-ink transition-colors group-hover:text-vermilion sm:text-3xl">Senior Product Designer</h3><p class="mt-1 font-grotesk text-sm font-semibold uppercase tracking-[0.14em] text-ink">Layer Studio</p><p class="mt-3 max-w-xl font-grotesk text-sm leading-relaxed text-ink-soft">Led design for a B2B analytics platform used by 200k+ operators. Built the component library and a research practice that cut onboarding time by a third.</p></div><div class="flex flex-wrap content-start gap-2 sm:col-span-3 sm:justify-end"><span class="chip">SaaS</span><span class="chip">Design systems</span><span class="chip">Data visualisation</span><span class="chip">Design ops</span></div></article></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 120ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 120ms; opacity: 0; transform: translateY(28px);"><article class="group grid gap-4 border-t border-ink/15 py-8 transition-colors last:border-b sm:grid-cols-12 sm:gap-6"><p class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft sm:col-span-3">2017 — 2019</p><div class="sm:col-span-6"><h3 class="font-display text-2xl text-ink transition-colors group-hover:text-vermilion sm:text-3xl">Product Designer</h3><p class="mt-1 font-grotesk text-sm font-semibold uppercase tracking-[0.14em] text-ink">Fieldwork</p><p class="mt-3 max-w-xl font-grotesk text-sm leading-relaxed text-ink-soft">Shipped consumer apps across fintech and health. Partnered with PMs, engineers, and researchers to take features from napkin sketch to launch.</p></div><div class="flex flex-wrap content-start gap-2 sm:col-span-3 sm:justify-end"><span class="chip">Mobile</span><span class="chip">Consumer apps</span><span class="chip">Prototyping</span><span class="chip">Usability testing</span></div></article></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 180ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 180ms; opacity: 0; transform: translateY(28px);"><article class="group grid gap-4 border-t border-ink/15 py-8 transition-colors last:border-b sm:grid-cols-12 sm:gap-6"><p class="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft sm:col-span-3">2015 — 2017</p><div class="sm:col-span-6"><h3 class="font-display text-2xl text-ink transition-colors group-hover:text-vermilion sm:text-3xl">Visual &amp; Editorial Designer</h3><p class="mt-1 font-grotesk text-sm font-semibold uppercase tracking-[0.14em] text-ink">The Type House</p><p class="mt-3 max-w-xl font-grotesk text-sm leading-relaxed text-ink-soft">Learned to set type at a small editorial studio. Designed printed quarterly journals, identities, and the odd exhibition catalogue.</p></div><div class="flex flex-wrap content-start gap-2 sm:col-span-3 sm:justify-end"><span class="chip">Editorial</span><span class="chip">Typography</span><span class="chip">Print</span><span class="chip">Brand</span></div></article></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><div class="mt-10"><a href="#contact" class="btn-outline group">Request the full CV<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right h-4 w-4 transition-transform duration-300 group-hover:rotate-45" aria-hidden="true"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg></a></div></div></div></section><section id="skills" class="scroll-mt-20 border-b border-ink/15"><div class="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><div class="flex flex-wrap items-end justify-between gap-4"><p class="label flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk h-3.5 w-3.5 text-vermilion" aria-hidden="true"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg><span class="text-vermilion tabular-nums">04</span><span class="h-px w-8 bg-ink/20" aria-hidden="true"></span><span>Capabilities</span></p><p class="label">three shelves, one practice</p></div></div><div class="mt-10 grid gap-px overflow-hidden border border-ink/15 bg-ink/15 md:grid-cols-3"><div class="h-full" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><div class="group flex h-full flex-col bg-paper p-6 transition-colors hover:bg-cream sm:p-8"><p class="label"><span class="text-vermilion">01</span> · Product</p><ul class="mt-6 flex grow flex-col gap-3"><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Product strategy</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>UX research</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Interaction design</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Design systems</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Prototyping</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Accessibility</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Content design</li></ul><p class="mt-8 border-t border-ink/15 pt-4 font-grotesk text-xs italic leading-relaxed text-ink-soft">The discipline of deciding what not to build.</p></div></div><div class="h-full" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms; opacity: 0; transform: translateY(28px);"><div class="group flex h-full flex-col bg-paper p-6 transition-colors hover:bg-cream sm:p-8"><p class="label"><span class="text-vermilion">02</span> · Craft</p><ul class="mt-6 flex grow flex-col gap-3"><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Typography</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Art direction</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Brand identity</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Editorial design</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Motion</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Illustration</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Packaging</li></ul><p class="mt-8 border-t border-ink/15 pt-4 font-grotesk text-xs italic leading-relaxed text-ink-soft">Obsessive about the last five percent.</p></div></div><div class="h-full" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms; opacity: 0; transform: translateY(28px);"><div class="group flex h-full flex-col bg-paper p-6 transition-colors hover:bg-cream sm:p-8"><p class="label"><span class="text-vermilion">03</span> · Tooling</p><ul class="mt-6 flex grow flex-col gap-3"><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Figma</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Framer</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Webflow</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>After Effects</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Blender</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>React &amp; CSS</li><li class="flex items-baseline gap-2 font-display text-lg text-ink sm:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3.5 w-3.5 shrink-0 translate-y-[2px] text-vermilion opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>Prompting for outcomes</li></ul><p class="mt-8 border-t border-ink/15 pt-4 font-grotesk text-xs italic leading-relaxed text-ink-soft">Comfortable moving from wireframe to shippable code.</p></div></div></div></div></section><section id="credentials" class="scroll-mt-20 border-b border-ink/15"><div class="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><div class="flex flex-wrap items-end justify-between gap-4"><p class="label flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk h-3.5 w-3.5 text-vermilion" aria-hidden="true"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg><span class="text-vermilion tabular-nums">05</span><span class="h-px w-8 bg-ink/20" aria-hidden="true"></span><span>Credentials</span></p><p class="label">ledger — awards, degrees, talks</p></div></div><div class="mt-10 overflow-hidden border-t border-ink/15"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><div class="grid gap-3 border-b border-ink/15 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6"><div class="sm:col-span-2"><span class="inline-flex rounded-full px-3 py-1 font-grotesk text-[10px] font-medium uppercase tracking-[0.14em] bg-vermilion text-paper">Award</span></div><div class="sm:col-span-7"><p class="font-display text-lg leading-snug text-ink sm:text-xl">AIGA Design Award — Best Digital Experience</p></div><div class="flex items-baseline justify-between gap-4 sm:col-span-3 sm:justify-end"><span class="font-grotesk text-xs uppercase tracking-[0.14em] text-ink-soft">AIGA</span><span class="font-grotesk text-xs tabular-nums text-ink">2024</span></div></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 40ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 40ms; opacity: 0; transform: translateY(28px);"><div class="grid gap-3 border-b border-ink/15 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6"><div class="sm:col-span-2"><span class="inline-flex rounded-full px-3 py-1 font-grotesk text-[10px] font-medium uppercase tracking-[0.14em] bg-ink text-paper">Honoree</span></div><div class="sm:col-span-7"><p class="font-display text-lg leading-snug text-ink sm:text-xl">Interaction Awards — Service &amp; Communication</p></div><div class="flex items-baseline justify-between gap-4 sm:col-span-3 sm:justify-end"><span class="font-grotesk text-xs uppercase tracking-[0.14em] text-ink-soft">IxDA</span><span class="font-grotesk text-xs tabular-nums text-ink">2023</span></div></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms; opacity: 0; transform: translateY(28px);"><div class="grid gap-3 border-b border-ink/15 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6"><div class="sm:col-span-2"><span class="inline-flex rounded-full px-3 py-1 font-grotesk text-[10px] font-medium uppercase tracking-[0.14em] bg-brass text-ink">Finalist</span></div><div class="sm:col-span-7"><p class="font-display text-lg leading-snug text-ink sm:text-xl">SXSW Innovation Awards</p></div><div class="flex items-baseline justify-between gap-4 sm:col-span-3 sm:justify-end"><span class="font-grotesk text-xs uppercase tracking-[0.14em] text-ink-soft">SXSW</span><span class="font-grotesk text-xs tabular-nums text-ink">2022</span></div></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 120ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 120ms; opacity: 0; transform: translateY(28px);"><div class="grid gap-3 border-b border-ink/15 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6"><div class="sm:col-span-2"><span class="inline-flex rounded-full px-3 py-1 font-grotesk text-[10px] font-medium uppercase tracking-[0.14em] bg-pine text-paper">Degree</span></div><div class="sm:col-span-7"><p class="font-display text-lg leading-snug text-ink sm:text-xl">BFA, Communication Design</p></div><div class="flex items-baseline justify-between gap-4 sm:col-span-3 sm:justify-end"><span class="font-grotesk text-xs uppercase tracking-[0.14em] text-ink-soft">Parsons School of Design</span><span class="font-grotesk text-xs tabular-nums text-ink">2015</span></div></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms; opacity: 0; transform: translateY(28px);"><div class="grid gap-3 border-b border-ink/15 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6"><div class="sm:col-span-2"><span class="inline-flex rounded-full px-3 py-1 font-grotesk text-[10px] font-medium uppercase tracking-[0.14em] bg-olive text-paper">Cert</span></div><div class="sm:col-span-7"><p class="font-display text-lg leading-snug text-ink sm:text-xl">Designing AI-Powered Interfaces</p></div><div class="flex items-baseline justify-between gap-4 sm:col-span-3 sm:justify-end"><span class="font-grotesk text-xs uppercase tracking-[0.14em] text-ink-soft">IDEO U</span><span class="font-grotesk text-xs tabular-nums text-ink">2025</span></div></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms; opacity: 0; transform: translateY(28px);"><div class="grid gap-3 border-b border-ink/15 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6"><div class="sm:col-span-2"><span class="inline-flex rounded-full px-3 py-1 font-grotesk text-[10px] font-medium uppercase tracking-[0.14em] bg-cream text-ink border border-ink/20">Talk</span></div><div class="sm:col-span-7"><p class="font-display text-lg leading-snug text-ink sm:text-xl">The Quiet Interface — A Designer's Case for Restraint</p></div><div class="flex items-baseline justify-between gap-4 sm:col-span-3 sm:justify-end"><span class="font-grotesk text-xs uppercase tracking-[0.14em] text-ink-soft">Beyond Tellerrand</span><span class="font-grotesk text-xs tabular-nums text-ink">2026</span></div></div></div></div></div></section><section id="contact" class="scroll-mt-20 bg-ink text-paper"><div class="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); opacity: 0; transform: translateY(28px);"><p class="label flex items-center gap-3"><span class="text-vermilion">06</span><span class="h-px w-8 bg-paper/25" aria-hidden="true"></span><span>Contact</span></p></div><div class="mt-10 grid gap-12 lg:grid-cols-12"><div class="lg:col-span-6"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 80ms; opacity: 0; transform: translateY(28px);"><h2 class="font-display text-4xl font-light leading-[1.05] tracking-[-0.01em] sm:text-5xl">Let's make something <em class="italic text-vermilion">worth keeping</em>.</h2></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 160ms; opacity: 0; transform: translateY(28px);"><p class="mt-6 max-w-md font-grotesk text-base leading-relaxed text-paper/70">Tell me what you're building and where it hurts. I reply within two working days — usually with questions, occasionally with sketches.</p></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 240ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 240ms; opacity: 0; transform: translateY(28px);"><div class="mt-10 flex flex-col gap-4 text-paper/80"><a href="mailto:hello@mirachen.design" class="group inline-flex w-fit items-center gap-3 border-b border-paper/25 pb-2 font-display text-xl italic text-paper transition-colors hover:border-vermilion hover:text-vermilion"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>hello@mirachen.design<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><p class="inline-flex items-center gap-2 font-grotesk text-sm text-paper/60"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>New York, NY — working worldwide.</p></div></div><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 320ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 320ms; opacity: 0; transform: translateY(28px);"><ul class="mt-10 flex flex-wrap gap-3"><li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="chip !border-paper/20 !text-paper/70 hover:!border-vermilion hover:!text-vermilion">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li><li><a href="https://www.are.na" target="_blank" rel="noreferrer" class="chip !border-paper/20 !text-paper/70 hover:!border-vermilion hover:!text-vermilion">Are.na<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li><li><a href="https://read.cv" target="_blank" rel="noreferrer" class="chip !border-paper/20 !text-paper/70 hover:!border-vermilion hover:!text-vermilion">Read.cv<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li></ul></div></div><div class="lg:col-span-6"><div class="" style="transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms; opacity: 0; transform: translateY(28px);"><form novalidate="" class="border border-paper/20 p-6 sm:p-8" aria-label="Contact form"><div class="grid gap-8 sm:grid-cols-2"><div><label for="name" class="label !text-paper/60">Name *</label><input id="name" placeholder="Ada Lovelace" class="input !text-paper placeholder:!text-paper/30" aria-invalid="false" type="text" name="name" style="border-color: color-mix(in srgb, rgb(250, 246, 234) 25%, transparent);"></div><div><label for="email" class="label !text-paper/60">Email *</label><input id="email" placeholder="you@studio.com" class="input !text-paper placeholder:!text-paper/30" aria-invalid="false" type="email" name="email" style="border-color: color-mix(in srgb, rgb(250, 246, 234) 25%, transparent);"></div></div><div class="mt-8"><label for="budget" class="label !text-paper/60">Scope of work</label><select id="budget" class="input !text-paper" name="budget" style="border-color: color-mix(in srgb, rgb(250, 246, 234) 25%, transparent);"><option value="" disabled="" class="text-ink" selected="">Choose one — or leave it to me</option><option value="A small, focused engagement" class="text-ink">A small, focused engagement</option><option value="A design system or rebuild" class="text-ink">A design system or rebuild</option><option value="A full product or brand" class="text-ink">A full product or brand</option><option value="Still figuring it out" class="text-ink">Still figuring it out</option></select></div><div class="mt-8"><label for="message" class="label !text-paper/60">The problem *</label><textarea id="message" rows="4" placeholder="We're building a platform for… and the part that keeps breaking is…" class="input resize-none !text-paper placeholder:!text-paper/30" name="message" aria-invalid="false" style="border-color: color-mix(in srgb, rgb(250, 246, 234) 25%, transparent);"></textarea></div><div class="mt-10 flex items-center justify-between gap-4"><button type="submit" class="inline-flex items-center gap-2 bg-vermilion px-7 py-3.5 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-paper transition-colors hover:bg-paper hover:text-ink disabled:opacity-60">Send inquiry<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button><p class="font-grotesk text-[11px] uppercase tracking-[0.14em] text-paper/40">No newsletters, ever</p></div></form></div></div></div></div></section></main><footer class="bg-ink text-paper"><div class="relative overflow-hidden border-y border-ink/15 bg-ink text-paper" aria-hidden="true"><div class="flex w-max py-3.5" style="animation: 42s linear 0s infinite normal none running marquee;"><div class="flex shrink-0 items-center"><span class="flex items-center font-display text-lg italic"><span class="px-6">Selected works</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Made by hand</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Interfaces &amp; identities</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Designed in New York</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Since 2015</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Systems, not screens</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Available for work</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></div><div class="flex shrink-0 items-center"><span class="flex items-center font-display text-lg italic"><span class="px-6">Selected works</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Made by hand</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Interfaces &amp; identities</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Designed in New York</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Since 2015</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Systems, not screens</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><span class="flex items-center font-display text-lg italic"><span class="px-6">Available for work</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-vermilion" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></div></div></div><div class="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-20"><div class="grid gap-12 lg:grid-cols-12"><div class="lg:col-span-6"><a class="font-display text-4xl font-light leading-[1.0] tracking-[-0.01em] sm:text-6xl" href="/" data-discover="true">Mira Chen<span class="text-vermilion">©</span></a><p class="mt-4 max-w-sm font-grotesk text-sm leading-relaxed text-paper/60">Product Designer &amp;amp; Art Director — designing warm, exact things in New York, NY.</p></div><div class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-6"><div><p class="label !text-paper/40">Index</p><ul class="mt-5 space-y-3"><li><button class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">Selected works<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button></li><li><button class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">About &amp; principles<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button></li><li><button class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">Experience<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button></li><li><button class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">Capabilities<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button></li><li><button class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">Credentials<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button></li><li><button class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">Contact<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button></li></ul></div><div><p class="label !text-paper/40">Elsewhere</p><ul class="mt-5 space-y-3"><li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li><li><a href="https://www.are.na" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">Are.na<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li><li><a href="https://read.cv" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-1.5 font-grotesk text-sm text-paper/80 transition-colors hover:text-vermilion">Read.cv<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li></ul></div><div><p class="label !text-paper/40">Set in</p><p class="mt-5 font-grotesk text-sm text-paper/80">Fraunces<br>&amp; Space Grotesk</p></div></div></div><div class="mt-16 flex flex-col gap-3 border-t border-paper/15 pt-6 font-grotesk text-[11px] uppercase tracking-[0.14em] text-paper/40 sm:flex-row sm:items-center sm:justify-between"><p>© 2015–2026 Mira Chen. All artefacts kept.</p><p>Drawn in Figma, set in code, printed in the browser.</p></div></div></footer></div></div>
+    <script type="module" src="/src/main.tsx?t=1789357479135"></script>
+  
+</body></html>

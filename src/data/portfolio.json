@@ -1,0 +1,239 @@
+{
+  "person": {
+    "name": "Bryle Ebuenga",
+    "role": "Software Developer",
+    "location": "New York, NY",
+    "email": "bryle.ebuenga@gmail.com",
+    "bio": "I'm Reilee — a software developer in Philippines. For the last four years, I've been building and creating projects to test my development and technical skills. I enjoy working on projects that challenge me to think critically and creatively, and I'm always looking for new opportunities to learn and grow as a developer.",
+    "availability": "Available for freelance and full-time opportunities.",
+    "resumeUrl": "09946621802",
+    "socials": [
+      { "label": "LinkedIn", "url": "https://www.linkedin.com" },
+      { "label": "Are.na", "url": "https://www.are.na" },
+      { "label": "Read.cv", "url": "https://read.cv" }
+    ],
+    "facts": [
+      { "label": "Based in", "value": "Philippines" },
+      { "label": "Practice", "value": "2026 — present" },
+      { "label": "Focus", "value": "Project · Development" },
+    { "label": "Projects", "value": "10 projects & local sites" }
+    ]
+  },
+  "principles": [
+    "Knowing what is good, what is bad, and what is neither.",
+    "Facing daily difficulties, fears, and pain with strength.",
+    "Treating other people fairly, kindly, and with compassion.",
+    "Practicing moderation and mastering your desires."
+  ],
+  "marquee": [
+    "Selected works",
+    "Made by hand",
+    "Interfaces & identities",
+    "Designed in Philippines",
+    "Since 2026",
+    "Systems, not screens"
+  ],
+  "experience": [
+    {
+      "org": "TCL Sun Inc.",
+      "role": "Web Developer Intern",
+      "period": "Jun, 2025 — Aug, 2025",
+      "summary": "Provided quality customer service and administrative support while assisting the eCommerce Department with daily operations. Developed and implemented a functional local website and database to improve data management and workflow efficiency. Collaborated with department personnel to gather requirements, implement features, and refine the system based on user feedback, applying web development, database management, and problem-solving skills.",
+      "tags": ["Software development", "Web platforms", "Design systems"]
+    },
+    {
+      "org": "Manuel L. Quezon High School",
+      "role": "Student Teacher",
+      "period": "Feb, 2026 — Mar, 2026",
+      "summary": "Taught Computer System Servicing to Grades 9 and 10, delivering engaging lessons and hands-on laboratory activities focused on computer hardware, software, and safety procedures. Developed lesson plans, instructional materials, and assessments while monitoring student performance and providing constructive feedback. Maintained an organized learning environment and collaborated with supervising teachers and school personnel to improve instructional strategies and student outcomes. Received high performance ratings and commendations for instructional delivery and professionalism.",
+      "tags": ["TLE", "Computer System Servicing", "Teaching", "Instructional design"]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Web Development",
+      "items": ["UX/UI Design", "Interactive Design", "HTML/CSS", "Prototyping", "Accessibility", "Content design", "JavaScript Frameworks(Vue, React)"],
+      "note": "The discipline of deciding what not to build."
+    },
+    {
+      "category": "Backend Development",
+      "items": ["Node.js", "Express.js", "Database Design", "API Development", "Server Management", "SQl & noSQL Databases", "Authentication & Authorization(Supabase)"],
+      "note": "Obsessive about the last five percent."
+    },
+    {
+      "category": "Tooling",
+      "items": ["Figma", "Framer", "Claude", "GitHub", "React & CSS", "Prompting for outcomes"],
+      "note": "Comfortable moving from wireframe to shippable code."
+    }
+  ],
+  "credentials": [
+    { "type": "Cert", "title": "College Diploma", "org": "Technological University of the Philippines", "year": "2026" },
+    { "type": "Degree", "title": "BTVTED Major in Computer Programming", "org": "Technological University of the Philippines", "year": "2026" },
+    { "type": "Cert", "title": "Certificate of Completion", "org": "TCL Sun Inc.", "year": "2025" },
+    { "type": "Cert", "title": "Certificate of Completion", "org": "Manuel L. Quezon High School", "year": "2026" }
+  ],
+  "projects": [
+    {
+      "slug": "meridian",
+      "title": "Meridian",
+      "category": "Fintech · Mobile & web",
+      "year": "2026",
+      "role": "Lead product design, design system",
+      "duration": "10 months",
+      "cover": "vermilion",
+      "summary": "A calm banking companion for small-business owners — cash in, cash out, no jargon, no panic.",
+      "overview": "Meridian asked us to rethink the daily banking app for a million small businesses drowning in tabs, graphs, and fine print. The brief was simple: make money feel legible for owners who have better things to do than read a dashboard.",
+      "challenge": "Small-business owners open their banking app at moments of stress — payday, invoice day, tax season. Every existing product punished them with complexity. We needed radical clarity without dumbing anything down.",
+      "approach": "We ran a four-week field study with 31 owners, then rebuilt the information architecture around five 'moments' instead of thirty features. Every screen was pressure-tested against a fictional persona we printed and pinned to the wall. Typography, spacing, and language were treated as features, not polish.",
+      "outcome": "Cash-flow confidence up 38% in beta, support tickets about 'where is my money' down by half, and the design system shipped to two more products within the quarter.",
+      "features": [
+        "Moment-based navigation with a single 'cash pulse' at the top of every screen",
+        "Plain-language transaction summaries written as sentences, not line items",
+        "Haptic-first alerts that only interrupt for what genuinely matters",
+        "A tax-season mode that pre-assembles categories for bookkeeping"
+      ],
+      "technologies": ["Figma", "Design system", "iOS", "Android", "Web", "Field research"],
+      "stats": [
+        { "value": "+38%", "label": "cash-flow confidence" },
+        { "value": "−52%", "label": "“where's my money” tickets" },
+        { "value": "5", "label": "moments, not 30 features" }
+      ],
+      "related": ["fieldnotes"]
+    },
+    {
+      "slug": "wavelength",
+      "title": "Wavelength",
+      "category": "Audio · Social app",
+      "year": "2025",
+      "role": "Product design, UX research",
+      "duration": "7 months",
+      "cover": "ink",
+      "summary": "A quieter alternative to the feed — audio conversations that people actually finish.",
+      "overview": "Wavelength is a social audio network built for people exhausted by algorithmic feeds. It organises conversation around places and moods rather than followers, and asks almost nothing of you to begin.",
+      "challenge": "Social apps optimise for time spent; listeners wanted time well spent. Retention data showed people loved content and hated the feed — endless, anxious, un-archivable.",
+      "approach": "We prototyped three navigation metaphors — map, timeline, and 'room'. Audio sketching with 60 participants steered us to a map of ongoing conversations. Design kept every interaction on a single thumb and gave hosts gentle structural tools to keep rooms calm.",
+      "outcome": "Median listening session grew from 9 to 23 minutes, while average time on feed fell sharply — people came for the signal and stayed for the conversation.",
+      "features": [
+        "A map of live conversations, arranged by place and mood",
+        "Asynchronous voice notes that don't demand an audience",
+        "Room hosts get a 'quiet state' — an invite-only mode with barriers to entry",
+        "Auto-archiving with searchable transcripts and summaries"
+      ],
+      "technologies": ["Figma", "Design tokens", "Framer", "iOS", "Audio UX", "Diary studies"],
+      "stats": [
+        { "value": "+14 min", "label": "median listening session" },
+        { "value": "60", "label": "participants audio-sketched" },
+        { "value": "3", "label": "metaphors prototyped" }
+      ],
+      "related": ["common-room", "signal"]
+    },
+    {
+      "slug": "common-room",
+      "title": "Common Room",
+      "category": "Workspace · Platform",
+      "year": "2024",
+      "role": "Design lead, system builder",
+      "duration": "9 months",
+      "cover": "olive",
+      "summary": "Booking and wayfinding for a national network of member workspaces — one legible system, forty rooms.",
+      "overview": "Common Room operates forty member workspaces across three cities. Their members booked desks and rooms through a patchwork of emails, spreadsheets, and sticky notes. We designed the single nervous system that replaced all three.",
+      "challenge": "Each workspace had its own quirks — a photograph studio that shouldn't be double-booked, a kitchen bench that only seated four. A one-size-fits-all booking tool would have failed within a week.",
+      "approach": "We built a configurable system: a typed 'space profile' per room, a wayfinding layer that mirrors the building, and a calendar that reads like a railway timetable. The whole thing degrades gracefully to a printed board for the rooms without screens.",
+      "outcome": "Double-bookings effectively eliminated, and the paperback 'room board' designs became so popular members asked for prints they could frame — which they did, 800 of them.",
+      "features": [
+        "A per-space profile that encodes capacity, equipment, and house rules",
+        "Wayfinding that draws the actual floor plan, not a to-do list",
+        "A printed board export for rooms without displays",
+        "Fair-queue waitlists instead of instant-grab booking races"
+      ],
+      "technologies": ["Figma", "Design system", "Web app", "Wayfinding", "Print exports", "Workshops"],
+      "stats": [
+        { "value": "0", "label": "double bookings in year one" },
+        { "value": "40", "label": "workspaces on one system" },
+        { "value": "800", "label": "printed room boards" }
+      ],
+      "related": ["meridian"]
+    },
+    {
+      "slug": "loom-oak",
+      "title": "Loom & Oak",
+      "category": "E-commerce · Brand",
+      "year": "2024",
+      "role": "Art direction, commerce design",
+      "duration": "5 months",
+      "cover": "brass",
+      "summary": "A made-by-hand goods brand with a storefront that feels like walking into the workshop.",
+      "overview": "Loom & Oak makes wooden tools and objects in a single workshop in upstate New York. Their storefront had outgrown its off-the-shelf template long before the knurls and dovetails demanded better.",
+      "challenge": "A catalogue product photo page would have read every item as identical. Each object is different — a spoon and a mallet deserve different pacing, different stories, different amounts of white space.",
+      "approach": "We designed a 'living catalogue': products arranged editorially like an exhibition rather than a grid, with photography that changes the type treatment per material, and a checkout that quotes the maker's own words. Everything renders true-to-size against a measuring tape footer.",
+      "outcome": "Conversion up 41% holiday-over-holiday, average order value up 18%, and workshop visiting hours tripled — the storefront became a place people wanted to enter.",
+      "features": [
+        "An editorial grid that matches pacing to object material and size",
+        "True-to-size photography with a working tape-measure motif",
+        "A checkout that reads like the maker's card, not a dunning letter",
+        "Maker-inventory: out-of-stock items become 'in the workshop'"
+      ],
+      "technologies": ["Webflow", "Editorial layouts", "Typography", "Adobe CC", "Photography direction", "Analytics"],
+      "stats": [
+        { "value": "+41%", "label": "conversion, holiday over holiday" },
+        { "value": "+18%", "label": "average order value" },
+        { "value": "3×", "label": "workshop visiting hours" }
+      ],
+      "related": ["common-room"]
+    },
+    {
+      "slug": "signal",
+      "title": "Signal",
+      "category": "Health · Data",
+      "year": "2023",
+      "role": "Product design, data visualisation",
+      "duration": "6 months",
+      "cover": "pine",
+      "summary": "A sleep and recovery dashboard that tells one honest story per night — not a spreadsheet of guilt.",
+      "overview": "Signal connects to the sensors people already own and turns the noise into a single, legible read-out: how much recovery your body actually achieved today.",
+      "challenge": "Health data products have a shame problem. Users were abandoning dashboards full of red numbers and 'streaks' that punished rest. The honest metric — recovery — is the hardest to visualise well.",
+      "approach": "We treated the chart as the interface, not decoration: one main curve per day, a bespoke type scheme for the read-out, and a deliberate policy of never showing a trend line smaller than its own error. Morning checks became a ritual instead of an audit.",
+      "outcome": "Daily active use tripled, and the 'green day' ritual — a single confident metric you can plan around — became the product's signature screen.",
+      "features": [
+        "One recovery read-out per day — a confidence interval, not a false precision",
+        "Morning ritual screen that takes ten seconds to answer",
+        "A guilt-free streak that counts rest, not consecutive logs",
+        "Dark mode tuned for a bedside glance at 6am"
+      ],
+      "technologies": ["Figma", "D3 prototypes", "Design system", "iOS", "Wearables", "Chart design"],
+      "stats": [
+        { "value": "3×", "label": "daily active use" },
+        { "value": "10s", "label": "to read the morning screen" },
+        { "value": "0", "label": "red numbers in the happy path" }
+      ],
+      "related": ["wavelength"]
+    },
+    {
+      "slug": "fieldnotes",
+      "title": "Fieldnotes",
+      "category": "Knowledge · Tool",
+      "year": "2023",
+      "role": "Product design, research",
+      "duration": "8 months",
+      "cover": "cream",
+      "summary": "A note-taking tool for researchers that makes messy fieldwork legible — without making it tidy.",
+      "overview": "Fieldnotes is where I quietly put my hardest constraint into practice: tools for people who live out of notebooks. It imports photos, scribbles, and audio, and turns a season of fieldwork into something you can cite.",
+      "challenge": "Researchers don't want a note app that imposes structure — imposing structure is the researcher's job. But a tool that stays formless can't be searched, linked, or finally written into a paper.",
+      "approach": "We studied how ten anthropologists actually wrote, then built an import pipeline that treats every kind of artifact the same: a dated note with provenance. Structure is a view, not a rule — you can read the same week as a timeline, a map, or a wall.",
+      "outcome": "Adopted by three university research groups in the first quarter, with a citation exporter that made it into the day-one of any grant application. It remains my favourite proof that constraint and freedom can share a tool.",
+      "features": [
+        "One import pipeline for photos, scans, scribbles, and audio",
+        "Provenance baked in — every note remembers where it came from",
+        "Structure as a view: timeline, map, or 'the wall'",
+        "A citation exporter that understands academic practices"
+      ],
+      "technologies": ["Figma", "Prototyping", "Qualitative research", "Web app", "Mobile", "Citation tooling"],
+      "stats": [
+        { "value": "3", "label": "university groups adopted in Q1" },
+        { "value": "10", "label": "anthropologists studied firsthand" },
+        { "value": "1", "label": "pipeline for every artifact" }
+      ],
+      "related": ["meridian", "signal"]
+    }
+  ]
+}

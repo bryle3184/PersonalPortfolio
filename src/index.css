@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   THEME — "Printed matter" editorial system
+   Warm paper · ink black · vermilion · olive/pine/brass for covers
+   ------------------------------------------------------------------ */
+@theme {
+  --color-paper: #f1eada;
+  --color-cream: #faf6ea;
+  --color-ink: #1c1811;
+  --color-ink-soft: #6f6753;
+  --color-vermilion: #e0431d;
+  --color-olive: #7c6a3d;
+  --color-pine: #2f5d50;
+  --color-brass: #c07f2d;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-grotesk: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink font-grotesk antialiased;
+    background-image: repeating-linear-gradient(
+      0deg,
+      color-mix(in srgb, var(--color-ink) 2.2%, transparent) 0 1px,
+      transparent 1px 96px
+    );
+  }
+  ::selection {
+    background: var(--color-vermilion);
+    color: var(--color-cream);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-paper);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-ink) 30%, transparent);
+  }
+}
+
+@layer components {
+  .label {
+    @apply font-grotesk text-[11px] uppercase tracking-[0.24em] text-ink-soft;
+  }
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink/15 px-3.5 py-1.5 font-grotesk text-[11px] uppercase tracking-[0.14em] text-ink-soft;
+  }
+  .input {
+    @apply w-full border-b bg-transparent px-0 py-3 font-grotesk text-base text-ink;
+    border-color: color-mix(in srgb, var(--color-ink) 25%, transparent);
+    transition: border-color 0.3s ease;
+  }
+  .input:focus {
+    outline: none;
+    border-color: var(--color-vermilion);
+  }
+  .input::placeholder {
+    color: color-mix(in srgb, var(--color-ink-soft) 55%, transparent);
+  }
+  .btn-solid {
+    @apply inline-flex items-center justify-center gap-2 bg-ink px-6 py-3.5 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-paper transition-colors duration-300 hover:bg-vermilion;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-ink/25 px-6 py-3.5 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-ink transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-paper;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
