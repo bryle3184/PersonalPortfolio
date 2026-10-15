@@ -1,37 +1,36 @@
 {
   "person": {
     "name": "Bryle Ebuenga",
-    "role": "Software Developer",
-    "location": "New York, NY",
+    "role": "Software Development",
+    "location": "Metro Manila, Philippines",
     "email": "bryle.ebuenga@gmail.com",
-    "bio": "I'm Reilee — a software developer in Philippines. For the last four years, I've been building and creating projects to test my development and technical skills. I enjoy working on projects that challenge me to think critically and creatively, and I'm always looking for new opportunities to learn and grow as a developer.",
+    "bio": "I'm Reilee Bryle — an aspiring software developer in Philippines. For the last four years, I've been building and creating projects to test my development and technical skills. I enjoy working on projects that challenge me to think critically and creatively, and I'm always looking for new opportunities to learn and grow as a developer.",
     "availability": "Available for freelance and full-time opportunities.",
     "resumeUrl": "09946621802",
     "socials": [
       { "label": "LinkedIn", "url": "https://www.linkedin.com" },
-      { "label": "Are.na", "url": "https://www.are.na" },
-      { "label": "Read.cv", "url": "https://read.cv" }
+      { "label": "Facebook", "url": "https://www.are.na" },
+      { "label": "Instagram", "url": "https://read.cv" }
     ],
     "facts": [
       { "label": "Based in", "value": "Philippines" },
-      { "label": "Practice", "value": "2026 — present" },
+      { "label": "Practice", "value": "2026" },
       { "label": "Focus", "value": "Project · Development" },
     { "label": "Projects", "value": "10 projects & local sites" }
     ]
   },
   "principles": [
-    "Knowing what is good, what is bad, and what is neither.",
+    "“You have power over your mind, not outside events.” — Marcus Aurelius",
     "Facing daily difficulties, fears, and pain with strength.",
     "Treating other people fairly, kindly, and with compassion.",
     "Practicing moderation and mastering your desires."
   ],
   "marquee": [
-    "Selected works",
-    "Made by hand",
-    "Interfaces & identities",
-    "Designed in Philippines",
-    "Since 2026",
-    "Systems, not screens"
+    "Software Development",
+    "Digital Projects",
+    "2026",
+    "Full Stack Development",
+    "Systems"
   ],
   "experience": [
     {
@@ -57,12 +56,12 @@
     },
     {
       "category": "Backend Development",
-      "items": ["Node.js", "Express.js", "Database Design", "API Development", "Server Management", "SQl & noSQL Databases", "Authentication & Authorization(Supabase)"],
+      "items": ["Node.js", "Next.js", "Express.js", "Database Design", "API Development", "Server Management", "SQl & noSQL Databases", "Authentication & Authorization(Supabase)"],
       "note": "Obsessive about the last five percent."
     },
     {
       "category": "Tooling",
-      "items": ["Figma", "Framer", "Claude", "GitHub", "React & CSS", "Prompting for outcomes"],
+      "items": ["VS Code", "Figma", "Framer", "Claude", "GitHub", "React & CSS", "Prompting for outcomes"],
       "note": "Comfortable moving from wireframe to shippable code."
     }
   ],
@@ -70,29 +69,27 @@
     { "type": "Cert", "title": "College Diploma", "org": "Technological University of the Philippines", "year": "2026" },
     { "type": "Degree", "title": "BTVTED Major in Computer Programming", "org": "Technological University of the Philippines", "year": "2026" },
     { "type": "Cert", "title": "Certificate of Completion", "org": "TCL Sun Inc.", "year": "2025" },
-    { "type": "Cert", "title": "Certificate of Completion", "org": "Manuel L. Quezon High School", "year": "2026" }
+    { "type": "Cert", "title": "Certificate of Completion", "org": "Manuel L. Quezon High School", "year": "2026" },
+    { "type": "Cert", "title": "Digital Certificate", "org": "Vercel", "year": "2026" }
   ],
   "projects": [
     {
       "slug": "meridian",
-      "title": "Meridian",
-      "category": "Fintech · Mobile & web",
+      "title": "Chat App",
+      "category": "Web Development",
       "year": "2026",
-      "role": "Lead product design, design system",
-      "duration": "10 months",
+      "role": "Software Developer",
+      "duration": "2 Weeks",
       "cover": "vermilion",
-      "summary": "A calm banking companion for small-business owners — cash in, cash out, no jargon, no panic.",
-      "overview": "Meridian asked us to rethink the daily banking app for a million small businesses drowning in tabs, graphs, and fine print. The brief was simple: make money feel legible for owners who have better things to do than read a dashboard.",
-      "challenge": "Small-business owners open their banking app at moments of stress — payday, invoice day, tax season. Every existing product punished them with complexity. We needed radical clarity without dumbing anything down.",
-      "approach": "We ran a four-week field study with 31 owners, then rebuilt the information architecture around five 'moments' instead of thirty features. Every screen was pressure-tested against a fictional persona we printed and pinned to the wall. Typography, spacing, and language were treated as features, not polish.",
-      "outcome": "Cash-flow confidence up 38% in beta, support tickets about 'where is my money' down by half, and the design system shipped to two more products within the quarter.",
+      "summary": "A real-time Chat App small project using React.js and PUSHER. It allows users to send and receive messages in real-time, with a simple and intuitive interface.",
+      "overview": "Real-time chat applications enable users to communicate instantly by sending and receiving messages, sharing files, and exchanging information efficiently, providing a seamless and interactive communication experience.",
       "features": [
         "Moment-based navigation with a single 'cash pulse' at the top of every screen",
         "Plain-language transaction summaries written as sentences, not line items",
         "Haptic-first alerts that only interrupt for what genuinely matters",
         "A tax-season mode that pre-assembles categories for bookkeeping"
       ],
-      "technologies": ["Figma", "Design system", "iOS", "Android", "Web", "Field research"],
+      "technologies": ["React.js", "Next.js", "Web", "Pusher", "Real-time communication", "WebSockets"],
       "stats": [
         { "value": "+38%", "label": "cash-flow confidence" },
         { "value": "−52%", "label": "“where's my money” tickets" },
@@ -234,6 +231,168 @@
         { "value": "1", "label": "pipeline for every artifact" }
       ],
       "related": ["meridian", "signal"]
+    },
+    {
+      "slug": "multivariate-linear-regression",
+      "title": "Multivariate Linear Regression with Python",
+      "category": "Machine Learning",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "A Python implementation of multivariate linear regression.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python"],
+      "stats": [],
+      "related": []
+    },
+    {
+      "slug": "linear-regression",
+      "title": "Linear Regression with Python",
+      "category": "Machine Learning",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "Simple linear regression example in Python.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python"],
+      "stats": [],
+      "related": []
+    },
+    {
+      "slug": "face-detection",
+      "title": "Face Detection",
+      "category": "Computer Vision",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "Face detection project using OpenCV.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "OpenCV"],
+      "stats": [],
+      "related": []
+    },
+    {
+      "slug": "document-scanner",
+      "title": "Document Scanner",
+      "category": "Computer Vision",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "A document scanning app.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "OpenCV"],
+      "stats": [],
+      "related": []
+    },
+    {
+      "slug": "detecting-fake-news",
+      "title": "Detecting Fake News",
+      "category": "NLP",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "Fake news detection using machine learning.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "scikit-learn"],
+      "stats": [],
+      "related": []
+    },
+    {
+      "slug": "first-machine-learning",
+      "title": "First Machine Learning",
+      "category": "Machine Learning",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "Introductory machine learning project.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python"],
+      "stats": [],
+      "related": []
+    },
+    {
+      "slug": "cnn",
+      "title": "CNN Project",
+      "category": "Deep Learning",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "Convolutional Neural Network implementation.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "TensorFlow"],
+      "stats": [],
+      "related": []
+    },
+    {
+      "slug": "chat-app",
+      "title": "Real‑time Chat App",
+      "category": "Web App",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "A real‑time chat application using websockets.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Node.js", "React", "Socket.io"],
+      "stats": [],
+      "related": []
+    },
+    {
+      "slug": "python-llm",
+      "title": "Python LLM Experiments",
+      "category": "AI",
+      "year": "2024",
+      "role": "Developer",
+      "duration": "N/A",
+      "cover": "ink",
+      "summary": "Experiments with large language models in Python.",
+      "overview": "",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "PyTorch"],
+      "stats": [],
+      "related": []
     }
   ]
 }
