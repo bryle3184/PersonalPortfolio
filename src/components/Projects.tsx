@@ -25,10 +25,10 @@ export default function Projects({ projects }: { projects: PortfolioData["projec
 
         <Reveal>
           <div className="mt-14 border-t border-ink/15 pt-8">
-            <Link to="#contact" className="btn-outline group">
+            <a href="#contact" className="btn-outline group">
               Have a project in mind?
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </Link>
+            </a>
           </div>
         </Reveal>
       </div>
