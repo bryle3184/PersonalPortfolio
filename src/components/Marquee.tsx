@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 
 /** A slow rolling ticker between major sections. */
 export default function Marquee({ items }: { items: string[] }) {
