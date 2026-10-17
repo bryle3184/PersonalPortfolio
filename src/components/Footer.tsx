@@ -24,9 +24,9 @@ const COLS = [
     title: "Elsewhere",
     external: true,
     links: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "Facebook", url: "https://www.facebook.com" },
-      { label: "Github", url: "https://read.cv" },
+      { label: "LinkedIn", url: "www.linkedin.com/in/reilee-bryle-ebuenga-190834322" },
+      { label: "Facebook", url: "https://www.facebook.com/bryle.ebuenga" },
+      { label: "Github", url: "https://github.com/bryle3184" },
     ] as { label: string; url: string; id?: never }[],
   },
 ];
