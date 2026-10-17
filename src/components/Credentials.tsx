@@ -18,13 +18,13 @@ export default function Credentials({ credentials }: { credentials: PortfolioDat
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionLabel index="05">Credentials</SectionLabel>
-            <p className="label">ledger — awards, degrees, talks</p>
+            <p className="label">Degree, Certificates</p>
           </div>
         </Reveal>
 
         <div className="mt-10 overflow-hidden border-t border-ink/15">
           {credentials.map((c, i) => (
-            <Reveal key={`${c.type}-${c.title}`} delay={i * 40}>
+            <Reveal key={`${c.type}-${c.title}-${c.org}`} delay={i * 40}>
               <div className="grid gap-3 border-b border-ink/15 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6">
                 <div className="sm:col-span-2">
                   <span

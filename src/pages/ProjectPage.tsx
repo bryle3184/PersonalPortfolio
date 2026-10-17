@@ -8,6 +8,11 @@ import Reveal from "../components/Reveal";
 import SectionLabel from "../components/SectionLabel";
 import ProjectCard from "../components/ProjectCard";
 
+/** Bare filenames in portfolio.json resolve to /images/projects/<file>. */
+function imgSrc(file: string): string {
+  return file.includes("/") ? file : `/images/projects/${file}`;
+}
+
 export default function ProjectPage() {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -66,12 +71,12 @@ export default function ProjectPage() {
 
             {/* Meta ledger */}
             <Reveal delay={200}>
-              <dl className="mt-10 grid grid-cols-2 gap-px overflow-hidden border border-ink/15 bg-ink/15 sm:grid-cols-4">
+              <dl className="mt-10 grid grid-cols-2 gap-px overflow-hidden border border-ink/15 bg-ink/15 sm:grid-cols-2">
                 {[
                   { label: "Year", value: project.year },
                   { label: "Role", value: project.role },
-                  { label: "Duration", value: project.duration },
-                  { label: "Artefacts", value: String(project.features.length) },
+                  // { label: "Duration", value: project.duration },
+                  // { label: "Artefacts", value: String(project.features.length) },
                 ].map((m) => (
                   <div key={m.label} className="bg-paper p-4">
                     <dt className="label text-[10px]">{m.label}</dt>
@@ -118,8 +123,40 @@ export default function ProjectPage() {
           </div>
         </div>
 
+        {/* Project imagery — fed by project.images in portfolio.json */}
+        {project.images && project.images.length > 0 && (
+          <section className="border-b border-ink/15">
+            <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24">
+              <Reveal>
+                <SectionLabel index="01">Project imagery</SectionLabel>
+              </Reveal>
+              <div className="mt-10 grid gap-10 lg:grid-cols-12">
+                <div className="lg:col-span-4">
+                  <Reveal delay={80}>
+                    <p className="label sticky top-24">Documentation</p>
+                  </Reveal>
+                </div>
+                <div className="space-y-10 lg:col-span-8">
+                  {project.images.map((file, i) => {
+                      const src = imgSrc(file);
+                      return (
+                        <Reveal key={src} delay={120 + i * 60}>
+                          <img
+                            src={src}
+                            alt={`${project.title} screenshot ${i + 1}`}
+                            className="relative w-full max-h-[75vh] overflow-hidden border border-ink/15 bg-ink/5 object-contain"
+                          />
+                        </Reveal>
+                      );
+                    })}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Narrative spread */}
-        <section className="border-b border-ink/15">
+        {/* <section className="border-b border-ink/15">
           <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24">
             <div className="grid gap-14 lg:grid-cols-12">
               <div className="lg:col-span-4">
@@ -146,10 +183,10 @@ export default function ProjectPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Features */}
-        <section className="border-b border-ink/15">
+        {/* <section className="border-b border-ink/15">
           <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-24">
             <div className="grid gap-14 lg:grid-cols-12">
               <div className="lg:col-span-4">
@@ -176,7 +213,7 @@ export default function ProjectPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Kit */}
         <section className="border-b border-ink/15">

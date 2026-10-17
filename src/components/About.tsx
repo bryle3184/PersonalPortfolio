@@ -32,7 +32,7 @@ export default function About({ person, principles }: AboutProps) {
               </p>
             </Reveal>
             <Reveal delay={240}>
-              <dl className="mt-10 grid grid-cols-2 gap-px overflow-hidden border border-ink/15 bg-ink/15 sm:grid-cols-4">
+              <dl className="mt-10 grid grid-cols-2 gap-px overflow-hidden border border-ink/15 bg-ink/15 sm:grid-cols-3">
                 {person.facts.map((f) => (
                   <div key={f.label} className="bg-paper p-4">
                     <dt className="label text-[10px]">{f.label}</dt>

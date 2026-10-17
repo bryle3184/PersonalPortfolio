@@ -50,6 +50,8 @@ export interface Project {
   technologies: string[];
   stats: { value: string; label: string }[];
   related: string[];
+  /** Relative paths under /src/images/projects, e.g. ["meridian.png"]. */
+  images?: string[];
 }
 
 export interface PortfolioData {

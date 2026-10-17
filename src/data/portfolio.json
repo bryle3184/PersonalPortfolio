@@ -10,13 +10,12 @@
     "socials": [
       { "label": "LinkedIn", "url": "https://www.linkedin.com" },
       { "label": "Facebook", "url": "https://www.are.na" },
-      { "label": "Instagram", "url": "https://read.cv" }
+      { "label": "Github", "url": "https://read.cv" }
     ],
     "facts": [
       { "label": "Based in", "value": "Philippines" },
       { "label": "Practice", "value": "2026" },
-      { "label": "Focus", "value": "Project · Development" },
-    { "label": "Projects", "value": "10 projects & local sites" }
+      { "label": "Focus", "value": "Project · Development" }
     ]
   },
   "principles": [
@@ -74,169 +73,10 @@
   ],
   "projects": [
     {
-      "slug": "meridian",
-      "title": "Chat App",
-      "category": "Web Development",
-      "year": "2026",
-      "role": "Software Developer",
-      "duration": "2 Weeks",
-      "cover": "vermilion",
-      "summary": "A real-time Chat App small project using React.js and PUSHER. It allows users to send and receive messages in real-time, with a simple and intuitive interface.",
-      "overview": "Real-time chat applications enable users to communicate instantly by sending and receiving messages, sharing files, and exchanging information efficiently, providing a seamless and interactive communication experience.",
-      "features": [
-        "Moment-based navigation with a single 'cash pulse' at the top of every screen",
-        "Plain-language transaction summaries written as sentences, not line items",
-        "Haptic-first alerts that only interrupt for what genuinely matters",
-        "A tax-season mode that pre-assembles categories for bookkeeping"
-      ],
-      "technologies": ["React.js", "Next.js", "Web", "Pusher", "Real-time communication", "WebSockets"],
-      "stats": [
-        { "value": "+38%", "label": "cash-flow confidence" },
-        { "value": "−52%", "label": "“where's my money” tickets" },
-        { "value": "5", "label": "moments, not 30 features" }
-      ],
-      "related": ["fieldnotes"]
-    },
-    {
-      "slug": "wavelength",
-      "title": "Wavelength",
-      "category": "Audio · Social app",
-      "year": "2025",
-      "role": "Product design, UX research",
-      "duration": "7 months",
-      "cover": "ink",
-      "summary": "A quieter alternative to the feed — audio conversations that people actually finish.",
-      "overview": "Wavelength is a social audio network built for people exhausted by algorithmic feeds. It organises conversation around places and moods rather than followers, and asks almost nothing of you to begin.",
-      "challenge": "Social apps optimise for time spent; listeners wanted time well spent. Retention data showed people loved content and hated the feed — endless, anxious, un-archivable.",
-      "approach": "We prototyped three navigation metaphors — map, timeline, and 'room'. Audio sketching with 60 participants steered us to a map of ongoing conversations. Design kept every interaction on a single thumb and gave hosts gentle structural tools to keep rooms calm.",
-      "outcome": "Median listening session grew from 9 to 23 minutes, while average time on feed fell sharply — people came for the signal and stayed for the conversation.",
-      "features": [
-        "A map of live conversations, arranged by place and mood",
-        "Asynchronous voice notes that don't demand an audience",
-        "Room hosts get a 'quiet state' — an invite-only mode with barriers to entry",
-        "Auto-archiving with searchable transcripts and summaries"
-      ],
-      "technologies": ["Figma", "Design tokens", "Framer", "iOS", "Audio UX", "Diary studies"],
-      "stats": [
-        { "value": "+14 min", "label": "median listening session" },
-        { "value": "60", "label": "participants audio-sketched" },
-        { "value": "3", "label": "metaphors prototyped" }
-      ],
-      "related": ["common-room", "signal"]
-    },
-    {
-      "slug": "common-room",
-      "title": "Common Room",
-      "category": "Workspace · Platform",
-      "year": "2024",
-      "role": "Design lead, system builder",
-      "duration": "9 months",
-      "cover": "olive",
-      "summary": "Booking and wayfinding for a national network of member workspaces — one legible system, forty rooms.",
-      "overview": "Common Room operates forty member workspaces across three cities. Their members booked desks and rooms through a patchwork of emails, spreadsheets, and sticky notes. We designed the single nervous system that replaced all three.",
-      "challenge": "Each workspace had its own quirks — a photograph studio that shouldn't be double-booked, a kitchen bench that only seated four. A one-size-fits-all booking tool would have failed within a week.",
-      "approach": "We built a configurable system: a typed 'space profile' per room, a wayfinding layer that mirrors the building, and a calendar that reads like a railway timetable. The whole thing degrades gracefully to a printed board for the rooms without screens.",
-      "outcome": "Double-bookings effectively eliminated, and the paperback 'room board' designs became so popular members asked for prints they could frame — which they did, 800 of them.",
-      "features": [
-        "A per-space profile that encodes capacity, equipment, and house rules",
-        "Wayfinding that draws the actual floor plan, not a to-do list",
-        "A printed board export for rooms without displays",
-        "Fair-queue waitlists instead of instant-grab booking races"
-      ],
-      "technologies": ["Figma", "Design system", "Web app", "Wayfinding", "Print exports", "Workshops"],
-      "stats": [
-        { "value": "0", "label": "double bookings in year one" },
-        { "value": "40", "label": "workspaces on one system" },
-        { "value": "800", "label": "printed room boards" }
-      ],
-      "related": ["meridian"]
-    },
-    {
-      "slug": "loom-oak",
-      "title": "Loom & Oak",
-      "category": "E-commerce · Brand",
-      "year": "2024",
-      "role": "Art direction, commerce design",
-      "duration": "5 months",
-      "cover": "brass",
-      "summary": "A made-by-hand goods brand with a storefront that feels like walking into the workshop.",
-      "overview": "Loom & Oak makes wooden tools and objects in a single workshop in upstate New York. Their storefront had outgrown its off-the-shelf template long before the knurls and dovetails demanded better.",
-      "challenge": "A catalogue product photo page would have read every item as identical. Each object is different — a spoon and a mallet deserve different pacing, different stories, different amounts of white space.",
-      "approach": "We designed a 'living catalogue': products arranged editorially like an exhibition rather than a grid, with photography that changes the type treatment per material, and a checkout that quotes the maker's own words. Everything renders true-to-size against a measuring tape footer.",
-      "outcome": "Conversion up 41% holiday-over-holiday, average order value up 18%, and workshop visiting hours tripled — the storefront became a place people wanted to enter.",
-      "features": [
-        "An editorial grid that matches pacing to object material and size",
-        "True-to-size photography with a working tape-measure motif",
-        "A checkout that reads like the maker's card, not a dunning letter",
-        "Maker-inventory: out-of-stock items become 'in the workshop'"
-      ],
-      "technologies": ["Webflow", "Editorial layouts", "Typography", "Adobe CC", "Photography direction", "Analytics"],
-      "stats": [
-        { "value": "+41%", "label": "conversion, holiday over holiday" },
-        { "value": "+18%", "label": "average order value" },
-        { "value": "3×", "label": "workshop visiting hours" }
-      ],
-      "related": ["common-room"]
-    },
-    {
-      "slug": "signal",
-      "title": "Signal",
-      "category": "Health · Data",
-      "year": "2023",
-      "role": "Product design, data visualisation",
-      "duration": "6 months",
-      "cover": "pine",
-      "summary": "A sleep and recovery dashboard that tells one honest story per night — not a spreadsheet of guilt.",
-      "overview": "Signal connects to the sensors people already own and turns the noise into a single, legible read-out: how much recovery your body actually achieved today.",
-      "challenge": "Health data products have a shame problem. Users were abandoning dashboards full of red numbers and 'streaks' that punished rest. The honest metric — recovery — is the hardest to visualise well.",
-      "approach": "We treated the chart as the interface, not decoration: one main curve per day, a bespoke type scheme for the read-out, and a deliberate policy of never showing a trend line smaller than its own error. Morning checks became a ritual instead of an audit.",
-      "outcome": "Daily active use tripled, and the 'green day' ritual — a single confident metric you can plan around — became the product's signature screen.",
-      "features": [
-        "One recovery read-out per day — a confidence interval, not a false precision",
-        "Morning ritual screen that takes ten seconds to answer",
-        "A guilt-free streak that counts rest, not consecutive logs",
-        "Dark mode tuned for a bedside glance at 6am"
-      ],
-      "technologies": ["Figma", "D3 prototypes", "Design system", "iOS", "Wearables", "Chart design"],
-      "stats": [
-        { "value": "3×", "label": "daily active use" },
-        { "value": "10s", "label": "to read the morning screen" },
-        { "value": "0", "label": "red numbers in the happy path" }
-      ],
-      "related": ["wavelength"]
-    },
-    {
-      "slug": "fieldnotes",
-      "title": "Fieldnotes",
-      "category": "Knowledge · Tool",
-      "year": "2023",
-      "role": "Product design, research",
-      "duration": "8 months",
-      "cover": "cream",
-      "summary": "A note-taking tool for researchers that makes messy fieldwork legible — without making it tidy.",
-      "overview": "Fieldnotes is where I quietly put my hardest constraint into practice: tools for people who live out of notebooks. It imports photos, scribbles, and audio, and turns a season of fieldwork into something you can cite.",
-      "challenge": "Researchers don't want a note app that imposes structure — imposing structure is the researcher's job. But a tool that stays formless can't be searched, linked, or finally written into a paper.",
-      "approach": "We studied how ten anthropologists actually wrote, then built an import pipeline that treats every kind of artifact the same: a dated note with provenance. Structure is a view, not a rule — you can read the same week as a timeline, a map, or a wall.",
-      "outcome": "Adopted by three university research groups in the first quarter, with a citation exporter that made it into the day-one of any grant application. It remains my favourite proof that constraint and freedom can share a tool.",
-      "features": [
-        "One import pipeline for photos, scans, scribbles, and audio",
-        "Provenance baked in — every note remembers where it came from",
-        "Structure as a view: timeline, map, or 'the wall'",
-        "A citation exporter that understands academic practices"
-      ],
-      "technologies": ["Figma", "Prototyping", "Qualitative research", "Web app", "Mobile", "Citation tooling"],
-      "stats": [
-        { "value": "3", "label": "university groups adopted in Q1" },
-        { "value": "10", "label": "anthropologists studied firsthand" },
-        { "value": "1", "label": "pipeline for every artifact" }
-      ],
-      "related": ["meridian", "signal"]
-    },
-    {
       "slug": "multivariate-linear-regression",
       "title": "Multivariate Linear Regression with Python",
       "category": "Machine Learning",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
       "cover": "ink",
@@ -248,13 +88,14 @@
       "features": [],
       "technologies": ["Python"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images": ["mutivariate-linear-regression1.png", "mutivariate-linear-regression2.png"]
     },
     {
       "slug": "linear-regression",
       "title": "Linear Regression with Python",
       "category": "Machine Learning",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
       "cover": "ink",
@@ -266,16 +107,17 @@
       "features": [],
       "technologies": ["Python"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["linear-regression1.png", "linear-regression2.png"]
     },
     {
       "slug": "face-detection",
       "title": "Face Detection",
       "category": "Computer Vision",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
-      "cover": "ink",
+      "cover": "vermilion",
       "summary": "Face detection project using OpenCV.",
       "overview": "",
       "challenge": "",
@@ -284,16 +126,17 @@
       "features": [],
       "technologies": ["Python", "OpenCV"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["face-detection1.png", "face-detection2.png"]
     },
     {
       "slug": "document-scanner",
       "title": "Document Scanner",
       "category": "Computer Vision",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
-      "cover": "ink",
+      "cover": "vermilion",
       "summary": "A document scanning app.",
       "overview": "",
       "challenge": "",
@@ -302,13 +145,14 @@
       "features": [],
       "technologies": ["Python", "OpenCV"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["document-scanner2.png", "document-scanner3.png"]
     },
     {
       "slug": "detecting-fake-news",
       "title": "Detecting Fake News",
-      "category": "NLP",
-      "year": "2024",
+      "category": "Machine Learning",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
       "cover": "ink",
@@ -320,13 +164,14 @@
       "features": [],
       "technologies": ["Python", "scikit-learn"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["detecting-fake-news1.png"]
     },
     {
       "slug": "first-machine-learning",
       "title": "First Machine Learning",
       "category": "Machine Learning",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
       "cover": "ink",
@@ -338,34 +183,17 @@
       "features": [],
       "technologies": ["Python"],
       "stats": [],
-      "related": []
-    },
-    {
-      "slug": "cnn",
-      "title": "CNN Project",
-      "category": "Deep Learning",
-      "year": "2024",
-      "role": "Developer",
-      "duration": "N/A",
-      "cover": "ink",
-      "summary": "Convolutional Neural Network implementation.",
-      "overview": "",
-      "challenge": "",
-      "approach": "",
-      "outcome": "",
-      "features": [],
-      "technologies": ["Python", "TensorFlow"],
-      "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["first-machine-learning1.png", "first-machine-learning2.png"]
     },
     {
       "slug": "chat-app",
       "title": "Real‑time Chat App",
       "category": "Web App",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
-      "cover": "ink",
+      "cover": "olive",
       "summary": "A real‑time chat application using websockets.",
       "overview": "",
       "challenge": "",
@@ -374,34 +202,17 @@
       "features": [],
       "technologies": ["Node.js", "React", "Socket.io"],
       "stats": [],
-      "related": []
-    },
-    {
-      "slug": "python-llm",
-      "title": "Python LLM Experiments",
-      "category": "AI",
-      "year": "2024",
-      "role": "Developer",
-      "duration": "N/A",
-      "cover": "ink",
-      "summary": "Experiments with large language models in Python.",
-      "overview": "",
-      "challenge": "",
-      "approach": "",
-      "outcome": "",
-      "features": [],
-      "technologies": ["Python", "PyTorch"],
-      "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["chat-app1.png", "chat-app2.png"]
     },
     {
       "slug": "finance-tracker",
       "title": "Finance Tracker",
       "category": "Finance",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
-      "cover": "ink",
+      "cover": "olive",
       "summary": "A personal finance tracking web application.",
       "overview": "",
       "challenge": "",
@@ -410,16 +221,17 @@
       "features": [],
       "technologies": ["React", "Node.js", "PostgreSQL"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["finance-tracker1.png", "finance-tracker2.png"]
     },
     {
       "slug": "opac",
       "title": "OPAC",
       "category": "Library System",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
-      "cover": "ink",
+      "cover": "olive",
       "summary": "Online public access catalog system.",
       "overview": "",
       "challenge": "",
@@ -428,16 +240,17 @@
       "features": [],
       "technologies": ["React", "Express.js", "MongoDB"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["opac1.png", "opac2.png"]
     },
     {
       "slug": "pos",
       "title": "POS System",
       "category": "Point of Sale",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
-      "cover": "ink",
+      "cover": "olive",
       "summary": "A point‑of‑sale application for retail.",
       "overview": "",
       "challenge": "",
@@ -446,16 +259,17 @@
       "features": [],
       "technologies": ["React", "Node.js", "SQLite"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["pos1.png", "pos2.png"]
     },
     {
       "slug": "nextjs-dashboard",
       "title": "Next.js Dashboard",
       "category": "Web Dashboard",
-      "year": "2024",
+      "year": "2026",
       "role": "Developer",
       "duration": "N/A",
-      "cover": "ink",
+      "cover": "olive",
       "summary": "A dashboard built with Next.js showcasing server‑side rendering.",
       "overview": "",
       "challenge": "",
@@ -464,7 +278,8 @@
       "features": [],
       "technologies": ["Next.js", "React", "Vercel"],
       "stats": [],
-      "related": []
+      "related": [],
+      "images" : ["nextjs-dashboard1.png", "nextjs-dashboard2.png"]
     }
   ]
 }

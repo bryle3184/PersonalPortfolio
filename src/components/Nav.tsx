@@ -44,7 +44,7 @@ export default function Nav({ person }: { person: PortfolioData["person"] }) {
             {person.name}
             <span className="text-vermilion">©</span>
             <span className="text-xs font-normal tracking-[0.14em] text-ink-soft transition-colors group-hover:text-vermilion">
-              Portfolio — 2015/{new Date().getFullYear()}
+              Portfolio — {new Date().getFullYear()}
             </span>
           </button>
 

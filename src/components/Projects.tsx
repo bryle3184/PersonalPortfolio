@@ -11,7 +11,7 @@ export default function Projects({ projects }: { projects: PortfolioData["projec
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionLabel index="01">Selected works</SectionLabel>
-            <p className="label">{projects.length} artefacts — 2023–2026</p>
+            <p className="label">{projects.length} Projects — 2026</p>
           </div>
         </Reveal>
 

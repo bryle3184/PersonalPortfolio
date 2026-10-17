@@ -9,11 +9,11 @@ interface HeroProps {
 }
 
 const CONTENTS = [
-  { n: "01", label: "Selected works", note: "6 artefacts", id: "work" },
+  { n: "01", label: "Selected works", note: "Projects", id: "work" },
   { n: "02", label: "About & principles", note: "a colophon", id: "about" },
-  { n: "03", label: "Experience", note: "2015 — present", id: "experience" },
+  { n: "03", label: "Experience", note: "2026", id: "experience" },
   { n: "04", label: "Capabilities", note: "three shelves", id: "skills" },
-  { n: "05", label: "Credentials", note: "ledger", id: "credentials" },
+  { n: "05", label: "Credentials", note: "Profession", id: "credentials" },
   { n: "06", label: "Contact", note: "open a thread", id: "contact" },
 ];
 
@@ -25,7 +25,7 @@ export default function Hero({ person, marquee }: HeroProps) {
           {/* Masthead */}
           <div className="lg:col-span-8">
             <Reveal>
-              <SectionLabel index="Vol. 06 — 2026">Independent practice</SectionLabel>
+              <SectionLabel index="Vol. 06 — 2026">Independent production</SectionLabel>
             </Reveal>
             <Reveal delay={80}>
               <h1 className="mt-8 font-display text-5xl font-light leading-[1.02] tracking-[-0.01em] sm:text-6xl xl:text-[5.25rem]">

@@ -25,8 +25,8 @@ const COLS = [
     external: true,
     links: [
       { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "Are.na", url: "https://www.are.na" },
-      { label: "Read.cv", url: "https://read.cv" },
+      { label: "Facebook", url: "https://www.facebook.com" },
+      { label: "Github", url: "https://read.cv" },
     ] as { label: string; url: string; id?: never }[],
   },
 ];
@@ -100,7 +100,7 @@ export default function Footer({ person, marquee }: FooterProps) {
 
         <div className="mt-16 flex flex-col gap-3 border-t border-paper/15 pt-6 font-grotesk text-[11px] uppercase tracking-[0.14em] text-paper/40 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © 2015–{new Date().getFullYear()} {person.name}. All artefacts kept.
+            © {new Date().getFullYear()} {person.name}. All rights reserved. Designed and built by {person.name}.
           </p>
           <p>Drawn in Figma, set in code, printed in the browser.</p>
         </div>
