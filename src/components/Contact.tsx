@@ -22,12 +22,41 @@ export default function Contact({ person }: { person: PortfolioData["person"] })
   } = useForm<FormValues>({ mode: "onBlur" });
   const [sent, setSent] = useState(false);
 
-  const onSubmit = async (_values: FormValues) => {
-    // Simulated send — wire this to your email service / API of choice.
-    await new Promise((r) => setTimeout(r, 700));
+  const FORMSPREE_URL = (import.meta.env.VITE_FORMSPREE_ID as string | undefined)
+    ?.replace(/^https?:\/\/formspree\.io\/f\//i, ""); // accept either the ID or the full endpoint
+
+  const confirm = () => {
     setSent(true);
     reset();
     window.setTimeout(() => setSent(false), 8000);
+  };
+
+  const onSubmit = async (values: FormValues) => {
+    const payload = new FormData();
+    payload.append("name", values.name);
+    payload.append("email", values.email);
+    payload.append("budget", values.budget || "—");
+    payload.append("message", values.message);
+
+    // Real backend: Formspree posts the form straight to the owner's inbox.
+    if (FORMSPREE_URL) {
+      try {
+        const res = await fetch(`https://formspree.io/f/${FORMSPREE_URL}`, {
+          method: "POST",
+          body: payload,
+          headers: { Accept: "application/json" },
+        });
+        if (!res.ok) throw new Error(`Formspree responded ${res.status}`);
+        confirm();
+        return;
+      } catch {
+        // Backend unreachable — fall back to the user's own mail client.
+      }
+    }
+    window.location.href = `mailto:${person.email}?subject=${encodeURIComponent(`Inquiry from ${values.name}`)}&body=${encodeURIComponent(
+      [`Name: ${values.name}`, `Email: ${values.email}`, `Scope: ${values.budget || "—"}`, "", values.message].join("\n")
+    )}`;
+    confirm();
   };
 
   return (

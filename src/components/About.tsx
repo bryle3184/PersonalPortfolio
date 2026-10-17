@@ -20,15 +20,13 @@ export default function About({ person, principles }: AboutProps) {
           <div className="lg:col-span-7">
             <Reveal delay={80}>
               <p className="font-display text-3xl font-light leading-[1.15] tracking-[-0.01em] sm:text-4xl">
-                I care about the <em className="italic text-vermilion">objects people live with</em> — the screens,
-                systems, and printed things that shape the texture of a working day.
+                I’m an aspiring <em className="italic text-vermilion">Software Developer </em> — passionate about building functional, user-friendly, and efficient software solutions.
+                {/* I enjoy turning ideas into practical applications by combining creativity, logical thinking, and problem-solving skills. */}
               </p>
             </Reveal>
             <Reveal delay={160}>
               <p className="mt-6 max-w-xl font-grotesk text-base leading-relaxed text-ink-soft">
-                {person.bio} The overlap of editorial craft and product thinking is where I do my best work: interfaces
-                with a point of view, identities with a spine, systems that hold a thousand screens together without
-                crushing the first one.
+                I'm a software development enthusiast focused on building practical, efficient, and user-friendly applications. With experience in web development, programming, and database management, I enjoy transforming ideas into functional digital solutions. I'm committed to continuous learning, improving my coding skills, and creating software that solves real-world problems.
               </p>
             </Reveal>
             <Reveal delay={240}>
@@ -47,7 +45,7 @@ export default function About({ person, principles }: AboutProps) {
           <div className="lg:col-span-5">
             <Reveal delay={200}>
               <div className="border border-ink/15 bg-cream p-6 sm:p-8">
-                <p className="label">The working method</p>
+                <p className="label">Principles and values</p>
                 <ol className="mt-6 space-y-5">
                   {principles.map((p, i) => (
                     <li key={p} className="flex gap-4 border-t border-ink/15 pt-4">

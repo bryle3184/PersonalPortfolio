@@ -46,18 +46,18 @@
   "skills": [
     {
       "category": "Web Development",
-      "items": ["UX/UI Design", "Interactive Design", "HTML/CSS", "Prototyping", "Accessibility", "Content design", "JavaScript Frameworks(Vue, React)"],
-      "note": "The discipline of deciding what not to build."
+      "items": ["UX/UI Design", "Interactive Design", "HTML/CSS", "Prototyping", "JavaScript", "Vue", "React"],
+      "note": "Turning ideas into intuitive and engaging web experiences."
     },
     {
       "category": "Backend Development",
-      "items": ["Node.js", "Next.js", "Express.js", "Database Design", "API Development", "Server Management", "SQl & noSQL Databases", "Authentication & Authorization(Supabase)"],
-      "note": "Obsessive about the last five percent."
+      "items": ["Node", "Next", "Express", "Database Design", "Server Management", "SQl/PostgreSQL", "Authentication & Authorization(Supabase)", "Python"],
+      "note": "Building the logic and infrastructure that power reliable applications."
     },
     {
       "category": "Tooling",
-      "items": ["VS Code", "Figma", "Framer", "Claude", "GitHub", "React & CSS", "Prompting for outcomes"],
-      "note": "Comfortable moving from wireframe to shippable code."
+      "items": ["VS Code", "Figma", "Framer", "Claude", "Git", "Prompting for outcomes"],
+      "note": "Using the right tools to turn concepts into working solutions."
     }
   ],
   "credentials": [
@@ -65,7 +65,8 @@
     { "type": "Degree", "title": "BTVTED Major in Computer Programming", "org": "Technological University of the Philippines", "year": "2026" },
     { "type": "Cert", "title": "Certificate of Completion", "org": "TCL Sun Inc.", "year": "2025" },
     { "type": "Cert", "title": "Certificate of Completion", "org": "Manuel L. Quezon High School", "year": "2026" },
-    { "type": "Cert", "title": "Digital Certificate", "org": "Vercel", "year": "2026" }
+    { "type": "Cert", "title": "Next Digital Certificate", "org": "Vercel", "year": "2026" },
+    { "type": "Cert", "title": "React Digital Certificate", "org": "Vercel", "year": "2026" }
   ],
   "projects": [
     {
