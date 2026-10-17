@@ -20,7 +20,7 @@ export default function About({ person, principles }: AboutProps) {
           <div className="lg:col-span-7">
             <Reveal delay={80}>
               <p className="font-display text-3xl font-light leading-[1.15] tracking-[-0.01em] sm:text-4xl">
-                I’m an aspiring <em className="italic text-vermilion">Software Developer </em> — passionate about building functional, user-friendly, and efficient software solutions.
+                I’m an aspiring <em className="italic text-vermilion">Software Engineer </em> — passionate about building functional, user-friendly, and efficient software solutions.
                 {/* I enjoy turning ideas into practical applications by combining creativity, logical thinking, and problem-solving skills. */}
               </p>
             </Reveal>
