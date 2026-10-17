@@ -29,7 +29,7 @@ export default function Hero({ person, marquee }: HeroProps) {
             </Reveal>
             <Reveal delay={80}>
               <h1 className="mt-8 font-display text-5xl font-light leading-[1.02] tracking-[-0.01em] sm:text-6xl xl:text-[5.25rem]">
-                Digital
+                Personal
                 <em className="font-[400] italic text-vermilion"> portfolio.</em>
               </h1>
             </Reveal>
