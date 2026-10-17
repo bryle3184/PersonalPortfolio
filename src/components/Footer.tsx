@@ -38,7 +38,7 @@ export default function Footer({ person, marquee }: FooterProps) {
 
   return (
     <footer className="bg-ink text-paper">
-      <Marquee items={[...marquee, "Available for work"]} />
+      <Marquee items={[...marquee, ""]} />
 
       <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-12">

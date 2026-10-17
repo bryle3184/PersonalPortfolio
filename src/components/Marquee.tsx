@@ -16,7 +16,7 @@ export default function Marquee({ items }: { items: string[] }) {
             {items.map((item, i) => (
               <span key={`${group}-${i}`} className="flex items-center font-display text-lg italic">
                 <span className="px-6">{item}</span>
-                <ArrowRight className="h-4 w-4 text-vermilion" />
+                {/* <ArrowRight className="h-4 w-4 text-vermilion" /> */}
               </span>
             ))}
           </div>
