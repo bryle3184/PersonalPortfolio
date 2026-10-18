@@ -197,7 +197,7 @@
       "approach": "",
       "outcome": "",
       "features": [],
-      "technologies": ["Node.js", "React", "Socket.io"],
+      "technologies": ["Next.js", "React", "Socket.io"],
       "stats": [],
       "related": [],
       "images" : ["chat-app1.png", "chat-app2.png"]
@@ -216,7 +216,7 @@
       "approach": "",
       "outcome": "",
       "features": [],
-      "technologies": ["React", "Node.js", "PostgreSQL"],
+      "technologies": ["React", "Next.js", "PostgreSQL"],
       "stats": [],
       "related": [],
       "images" : ["finance-tracker1.png", "finance-tracker2.png"]
@@ -235,7 +235,7 @@
       "approach": "",
       "outcome": "",
       "features": [],
-      "technologies": ["React", "Express.js", "MongoDB"],
+      "technologies": ["React", "Next.js", "PostgreSQL"],
       "stats": [],
       "related": [],
       "images" : ["opac1.png", "opac2.png"]
@@ -254,7 +254,7 @@
       "approach": "",
       "outcome": "",
       "features": [],
-      "technologies": ["React", "Node.js", "SQLite"],
+      "technologies": ["React", "Next.js", "PostgreSQL"],
       "stats": [],
       "related": [],
       "images" : ["pos1.png", "pos2.png"]
