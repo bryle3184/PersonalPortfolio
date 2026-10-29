@@ -1,263 +1,270 @@
 {
   "person": {
-    "name": "Bryle Ebuenga",
-    "role": "Software Development",
+    "name": "Reilee Bryle Ebuenga",
+    "role": "Software Developer | Web Developer | Computer Programming Graduate",
     "location": "Metro Manila, Philippines",
     "email": "bryle.ebuenga@gmail.com",
-    "bio": "I'm Reilee Bryle — an aspiring software engineer in Philippines. For the last four years, I've been building and creating projects to test my development and technical skills. I enjoy working on projects that challenge me to think critically and creatively, and I'm always looking for new opportunities to learn and grow as a engineer.",
+    "bio": "I'm a software development enthusiast focused on building practical, efficient, and user-friendly applications. With experience in web development, programming, and database management, I enjoy transforming ideas into functional digital solutions. I'm committed to continuous learning, improving my coding skills, and creating software that solves real-world problems.",
     "availability": "Available for freelance and full-time opportunities.",
-    "resumeUrl": "09946621802",
+    "resumeUrl": "/files/Reilee-Bryle-Ebuenga-Resume.pdf",
+    "profileImage": "/images/profile.png",
     "socials": [
-      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/reilee-bryle-ebuenga-190834322/?isSelfProfile=true" },
-      { "label": "Facebook", "url": "https://www.facebook.com/bryle.ebuenga" },
-      { "label": "Github", "url": "https://github.com/bryle3184" }
+      { "label": "GitHub", "url": "https://github.com/bryle3184" }
     ],
     "facts": [
-      { "label": "Based in", "value": "Philippines" },
-      { "label": "Practice", "value": "2026" },
-      { "label": "Focus", "value": "Project · Development" }
+      { "label": "Location", "value": "Metro Manila, Philippines" },
+      { "label": "Practice", "value": "2022 — 2026" },
+      { "label": "Focus", "value": "Full-Stack Development" }
     ]
   },
   "principles": [
-    "“You have power over your mind, not outside events.” — Marcus Aurelius",
-    "Facing daily difficulties, fears, and pain with strength.",
-    "Treating other people fairly, kindly, and with compassion.",
-    "Practicing moderation and mastering your desires."
+    "Good software starts with understanding the problem.",
+    "My goal is to build digital solutions that combine thoughtful design, reliable functionality, and practical value.",
+    "I focus on transforming ideas into functional applications with clean code and practical problem-solving."
   ],
+  "hero": {
+    "eyebrow": "COMPUTER PROGRAMMING GRADUATE",
+    "headline": "Building Digital Experiences That Solve Real Problems.",
+    "subhead": "I develop web applications, database-driven systems, and software solutions with a focus on functionality, usability, and thoughtful implementation."
+  },
   "marquee": [
-
+    "Full-Stack Development",
+    "Web Applications",
+    "Database Systems",
+    "Python & Machine Learning",
+    "Software Engineering",
+    "UI/UX Design"
   ],
   "experience": [
     {
       "org": "TCL Sun Inc.",
       "role": "Web Developer Intern",
-      "period": "Jun, 2025 — Aug, 2025",
-      "summary": "Provided quality customer service and administrative support while assisting the eCommerce Department with daily operations. Developed and implemented a functional local website and database to improve data management and workflow efficiency. Collaborated with department personnel to gather requirements, implement features, and refine the system based on user feedback, applying web development, database management, and problem-solving skills.",
-      "tags": ["Software development", "Web platforms", "Design systems"]
+      "period": "June 23, 2025 — August 8, 2025",
+      "summary": "Developed a departmental web application to support eCommerce workflows including product feedback, tracking, content upload schedules, and role-specific features. Responsibilities included website development, database integration, gathering system requirements, implementing requested features, and refining the application using user feedback.",
+      "tags": ["Web Development", "Database Integration", "Vue.js", "Node.js", "MongoDB"]
     },
     {
       "org": "Manuel L. Quezon High School",
-      "role": "Student Teacher",
-      "period": "Feb, 2026 — Mar, 2026",
-      "summary": "Taught Computer System Servicing to Grades 9 and 10, delivering engaging lessons and hands-on laboratory activities focused on computer hardware, software, and safety procedures. Developed lesson plans, instructional materials, and assessments while monitoring student performance and providing constructive feedback. Maintained an organized learning environment and collaborated with supervising teachers and school personnel to improve instructional strategies and student outcomes. Received high performance ratings and commendations for instructional delivery and professionalism.",
-      "tags": ["TLE", "Computer System Servicing", "Teaching", "Instructional design"]
+      "role": "Student Teacher (OJT)",
+      "period": "February 26, 2026 — March 20, 2026",
+      "summary": "Taught Computer System Servicing to Grades 9 and 10, delivering engaging lessons and hands-on laboratory activities focused on computer hardware, software, and safety procedures. Developed lesson plans, instructional materials, and assessments while monitoring student performance.",
+      "tags": ["Teaching", "Instructional Design", "Technical Training", "Communication"]
     }
   ],
-  "skills": [
+  "education": [
     {
-      "category": "Web Development",
-      "items": ["UX/UI Design", "Interactive Design", "HTML/CSS", "Prototyping", "JavaScript", "Vue", "React"],
-      "note": "Turning ideas into intuitive and engaging web experiences."
+      "degree": "Bachelor of Technical Vocational Teacher Education",
+      "major": "Major in Computer Programming",
+      "institution": "Technological University of the Philippines – Manila",
+      "period": "2022 — 2026"
     },
     {
-      "category": "Backend Development",
-      "items": ["Node", "Next", "Express", "Database Design", "Server Management", "SQl/PostgreSQL", "Authentication & Authorization(Supabase)", "Python"],
-      "note": "Building the logic and infrastructure that power reliable applications."
+      "degree": "Senior High School",
+      "major": "STEM Strand",
+      "institution": "AMA Computer College",
+      "period": "2020 — 2022",
+      "honors": "With High Honors"
+    }
+  ],
+  "techStack": [
+    {
+      "category": "Frontend",
+      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Vue.js", "Next.js", "Bootstrap"],
+      "note": "Building intuitive and engaging web interfaces."
     },
     {
-      "category": "Tooling",
-      "items": ["VS Code", "Figma", "Framer", "Claude", "Git", "Prompting for outcomes"],
-      "note": "Using the right tools to turn concepts into working solutions."
+      "category": "Backend",
+      "items": ["Node.js", "Express.js"],
+      "note": "Creating reliable application logic and infrastructure."
+    },
+    {
+      "category": "Databases",
+      "items": ["SQL", "MongoDB", "PostgreSQL", "Supabase"],
+      "note": "Designing and managing data-driven systems."
+    },
+    {
+      "category": "Python & Data Science",
+      "items": ["Python", "Machine Learning", "Deep Learning", "OpenCV", "Data Analytics", "Linear Regression", "scikit-learn"],
+      "note": "Building intelligent systems and data analysis tools."
+    },
+    {
+      "category": "Other Skills",
+      "items": ["Computer System Servicing", "Technical Documentation", "Problem-Solving", "Communication"],
+      "note": "Supporting skills for full-spectrum development."
+    },
+    {
+      "category": "Teaching",
+      "items": ["Instructional Design", "Lesson Planning", "Technical Training", "Student Mentoring", "Lab Activities"],
+      "note": "Educating learners in programming, hardware, and software troubleshooting."
     }
   ],
   "credentials": [
-    { "type": "Cert", "title": "College Diploma", "org": "Technological University of the Philippines", "year": "2026" },
     { "type": "Degree", "title": "BTVTED Major in Computer Programming", "org": "Technological University of the Philippines", "year": "2026" },
-    { "type": "Cert", "title": "Certificate of Completion", "org": "TCL Sun Inc.", "year": "2025" },
-    { "type": "Cert", "title": "Certificate of Completion", "org": "Manuel L. Quezon High School", "year": "2026" },
+    { "type": "Cert", "title": "College Diploma", "org": "Technological University of the Philippines", "year": "2026" },
+    { "type": "Cert", "title": "Certificate of Completion", "org": "TCL Sun Inc. — Industrial Internship", "year": "2025" },
+    { "type": "Cert", "title": "Certificate of Completion", "org": "Manuel L. Quezon High School — Student Teaching", "year": "2026" },
+    { "type": "Cert", "title": "TESDA Certificate: Computer System Servicing NC II", "org": "TESDA", "year": "2024" },
+    { "type": "Cert", "title": "TESDA Certificate: Data Analytics III", "org": "TESDA", "year": "2024" },
     { "type": "Cert", "title": "Next Digital Certificate", "org": "Vercel", "year": "2026" },
     { "type": "Cert", "title": "React Digital Certificate", "org": "Vercel", "year": "2026" }
   ],
   "projects": [
     {
-      "slug": "multivariate-linear-regression",
-      "title": "Multivariate Linear Regression with Python",
-      "category": "Machine Learning",
-      "year": "2026",
-      "role": "Developer",
-      "duration": "N/A",
-      "cover": "ink",
-      "summary": "A Python implementation of multivariate linear regression.",
-      "overview": "",
-      "challenge": "",
-      "approach": "",
-      "outcome": "",
-      "features": [],
-      "technologies": ["Python"],
-      "stats": [],
+      "slug": "tcl-department-tracking-system",
+      "title": "TCL Department Tracking System",
+      "category": "Web Development",
+      "year": "2025",
+      "role": "Web Developer Intern",
+      "duration": "June — August 2025",
+      "cover": "electric",
+      "summary": "A departmental web application developed during internship to support eCommerce workflows including product feedback, tracking, content upload schedules, and role-specific features.",
+      "overview": "Developed during my internship at TCL Sun Inc., this departmental web application supports eCommerce workflows for the company's eCommerce Department. The system includes product feedback management, order tracking, content upload scheduling, and role-specific features for different departments.",
+      "challenge": "The main challenge was translating non-technical business requirements from department personnel into a functional web application while working within the constraints of an enterprise environment.",
+      "approach": "I collaborated closely with department personnel to gather requirements, implemented features iteratively based on user feedback, and integrated with the existing MongoDB database to ensure data consistency.",
+      "outcome": "The application successfully streamlined departmental workflows, improved data management efficiency, and was well-received by department personnel for its usability and reliability.",
+      "features": [
+        "Product feedback collection and management",
+        "Order tracking dashboard for eCommerce operations",
+        "Content upload scheduling system",
+        "Role-based access control for different departments",
+        "MongoDB database integration for data persistence",
+        "Responsive web interface built with Vue.js"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "Vue.js", "MongoDB"],
+      "stats": [
+        { "value": "3", "label": "Months" },
+        { "value": "5+", "label": "Features" },
+        { "value": "1", "label": "Database" }
+      ],
       "related": [],
-      "images": ["mutivariate-linear-regression1.png", "mutivariate-linear-regression2.png"]
+      "images": [],
+      "githubUrl": "https://github.com/bryle3184",
+      "liveUrl": null
     },
     {
-      "slug": "linear-regression",
-      "title": "Linear Regression with Python",
-      "category": "Machine Learning",
+      "slug": "emodulo",
+      "title": "eModulo",
+      "category": "Educational Technology",
       "year": "2026",
-      "role": "Developer",
-      "duration": "N/A",
-      "cover": "ink",
-      "summary": "Simple linear regression example in Python.",
-      "overview": "",
+      "role": "Capstone Project Developer",
+      "duration": "2022 — 2026",
+      "cover": "cyan",
+      "summary": "A web-based object-oriented programming learning module with integrated game features for learning activities.",
+      "overview": "eModulo is a capstone project developed as a web-based object-oriented programming learning module. The application incorporates game mechanics and interactive features to make learning programming concepts engaging for students.",
       "challenge": "",
       "approach": "",
       "outcome": "",
       "features": [],
-      "technologies": ["Python"],
-      "stats": [],
+      "technologies": ["Web Development", "Game Features", "OOP Learning"],
+      "stats": [
+        { "value": "4", "label": "Years" },
+        { "value": "1", "label": "Capstone" },
+        { "value": "100%", "label": "Completion" }
+      ],
       "related": [],
-      "images" : ["linear-regression1.png", "linear-regression2.png"]
+      "images": [],
+      "githubUrl": "https://github.com/bryle3184",
+      "liveUrl": null
     },
     {
-      "slug": "face-detection",
-      "title": "Face Detection",
-      "category": "Computer Vision",
+      "slug": "opac",
+      "title": "Open Public Access Catalog",
+      "category": "Library System",
       "year": "2026",
       "role": "Developer",
-      "duration": "N/A",
-      "cover": "vermilion",
-      "summary": "Face detection project using OpenCV.",
-      "overview": "",
+      "duration": "2026",
+      "cover": "emerald",
+      "summary": "An online cataloging system for libraries, enabling users to search and browse library collections.",
+      "overview": "The Open Public Access Catalog (OPAC) is a web-based library management system that allows users to search and browse library collections online. The system provides an intuitive interface for library patrons to find books, journals, and other resources.",
       "challenge": "",
       "approach": "",
       "outcome": "",
       "features": [],
-      "technologies": ["Python", "OpenCV"],
-      "stats": [],
+      "technologies": ["React", "Next.js", "PostgreSQL"],
+      "stats": [
+        { "value": "1", "label": "Catalog" },
+        { "value": "100+", "label": "Resources" },
+        { "value": "1", "label": "Library" }
+      ],
       "related": [],
-      "images" : ["face-detection1.png", "face-detection2.png"]
+      "images": ["opac1.png"],
+      "githubUrl": "https://github.com/bryle3184/OPAC",
+      "liveUrl": null
     },
     {
-      "slug": "document-scanner",
-      "title": "Document Scanner",
-      "category": "Computer Vision",
+      "slug": "pos-system",
+      "title": "Point of Sale System",
+      "category": "Business Application",
       "year": "2026",
       "role": "Developer",
-      "duration": "N/A",
-      "cover": "vermilion",
-      "summary": "A document scanning app.",
-      "overview": "",
+      "duration": "2026",
+      "cover": "amber",
+      "summary": "A point-of-sale application to support sales transactions and business workflows for retail environments.",
+      "overview": "This Point of Sale (POS) system is designed to support sales transactions and related business workflows. The application provides an intuitive interface for processing sales, managing products, and tracking transactions in retail environments.",
       "challenge": "",
       "approach": "",
       "outcome": "",
       "features": [],
-      "technologies": ["Python", "OpenCV"],
-      "stats": [],
+      "technologies": ["React", "Next.js", "PostgreSQL", "Supabase"],
+      "stats": [
+        { "value": "1", "label": "System" },
+        { "value": "POS", "label": "Type" },
+        { "value": "Retail", "label": "Industry" }
+      ],
       "related": [],
-      "images" : ["document-scanner2.png", "document-scanner3.png"]
+      "images": ["pos1.png"],
+      "githubUrl": "https://github.com/bryle3184/POS",
+      "liveUrl": null
     },
     {
-      "slug": "detecting-fake-news",
-      "title": "Detecting Fake News",
-      "category": "Machine Learning",
+      "slug": "finance-tracker",
+      "title": "Finance Tracker",
+      "category": "Personal Finance",
       "year": "2026",
       "role": "Developer",
-      "duration": "N/A",
-      "cover": "ink",
-      "summary": "Fake news detection using machine learning.",
-      "overview": "",
+      "duration": "2026",
+      "cover": "charcoal",
+      "summary": "A personal finance tracking web application for organizing and monitoring financial transactions.",
+      "overview": "The Finance Tracker is a web application designed to help users track and organize their financial transactions. The app provides a dashboard view for monitoring spending patterns, categorizing transactions, and visualizing financial data.",
       "challenge": "",
       "approach": "",
       "outcome": "",
       "features": [],
-      "technologies": ["Python", "scikit-learn"],
-      "stats": [],
+      "technologies": ["React", "Next.js", "PostgreSQL"],
+      "stats": [
+        { "value": "1", "label": "App" },
+        { "value": "1", "label": "User" },
+        { "value": "Track", "label": "Focus" }
+      ],
       "related": [],
-      "images" : ["detecting-fake-news1.png"]
-    },
-    {
-      "slug": "first-machine-learning",
-      "title": "First Machine Learning",
-      "category": "Machine Learning",
-      "year": "2026",
-      "role": "Developer",
-      "duration": "N/A",
-      "cover": "ink",
-      "summary": "Introductory machine learning project.",
-      "overview": "",
-      "challenge": "",
-      "approach": "",
-      "outcome": "",
-      "features": [],
-      "technologies": ["Python"],
-      "stats": [],
-      "related": [],
-      "images" : ["first-machine-learning1.png", "first-machine-learning2.png"]
+      "images": ["finance-tracker1.png"],
+      "githubUrl": "https://github.com/bryle3184/FinanceTracker",
+      "liveUrl": null
     },
     {
       "slug": "chat-app",
-      "title": "Real‑time Chat App",
-      "category": "Web App",
+      "title": "Real-time Chat App",
+      "category": "Communication",
       "year": "2026",
       "role": "Developer",
-      "duration": "N/A",
-      "cover": "olive",
-      "summary": "A real‑time chat application using websockets.",
-      "overview": "",
+      "duration": "2026",
+      "cover": "electric",
+      "summary": "A real-time chat application using websockets for instant messaging.",
+      "overview": "A real-time chat application built with websockets to support instant messaging between users. The app provides a clean interface for sending and receiving messages with real-time updates.",
       "challenge": "",
       "approach": "",
       "outcome": "",
       "features": [],
       "technologies": ["Next.js", "React", "Socket.io"],
-      "stats": [],
+      "stats": [
+        { "value": "1", "label": "App" },
+        { "value": "ws", "label": "Protocol" },
+        { "value": "10+", "label": "Messages" }
+      ],
       "related": [],
-      "images" : ["chat-app1.png", "chat-app2.png"]
-    },
-    {
-      "slug": "finance-tracker",
-      "title": "Finance Tracker",
-      "category": "Finance",
-      "year": "2026",
-      "role": "Developer",
-      "duration": "N/A",
-      "cover": "olive",
-      "summary": "A personal finance tracking web application.",
-      "overview": "",
-      "challenge": "",
-      "approach": "",
-      "outcome": "",
-      "features": [],
-      "technologies": ["React", "Next.js", "PostgreSQL"],
-      "stats": [],
-      "related": [],
-      "images" : ["finance-tracker1.png", "finance-tracker2.png"]
-    },
-    {
-      "slug": "opac",
-      "title": "OPAC",
-      "category": "Library System",
-      "year": "2026",
-      "role": "Developer",
-      "duration": "N/A",
-      "cover": "olive",
-      "summary": "Online public access catalog system.",
-      "overview": "",
-      "challenge": "",
-      "approach": "",
-      "outcome": "",
-      "features": [],
-      "technologies": ["React", "Next.js", "PostgreSQL"],
-      "stats": [],
-      "related": [],
-      "images" : ["opac1.png", "opac2.png"]
-    },
-    {
-      "slug": "pos",
-      "title": "POS System",
-      "category": "Point of Sale",
-      "year": "2026",
-      "role": "Developer",
-      "duration": "N/A",
-      "cover": "olive",
-      "summary": "A point‑of‑sale application for retail.",
-      "overview": "",
-      "challenge": "",
-      "approach": "",
-      "outcome": "",
-      "features": [],
-      "technologies": ["React", "Next.js", "PostgreSQL"],
-      "stats": [],
-      "related": [],
-      "images" : ["pos1.png", "pos2.png"]
+      "images": ["chat-app1.png"],
+      "githubUrl": "https://github.com/bryle3184/ChatApp",
+      "liveUrl": null
     },
     {
       "slug": "nextjs-dashboard",
@@ -265,18 +272,174 @@
       "category": "Web Dashboard",
       "year": "2026",
       "role": "Developer",
-      "duration": "N/A",
-      "cover": "olive",
-      "summary": "A dashboard built with Next.js showcasing server‑side rendering.",
-      "overview": "",
+      "duration": "2026",
+      "cover": "cyan",
+      "summary": "A dashboard built with Next.js showcasing server-side rendering capabilities.",
+      "overview": "A dashboard application built with Next.js that demonstrates server-side rendering capabilities. The project showcases modern React development patterns and performance optimizations.",
       "challenge": "",
       "approach": "",
       "outcome": "",
       "features": [],
       "technologies": ["Next.js", "React", "Vercel"],
-      "stats": [],
+      "stats": [
+        { "value": "1", "label": "Dashboard" },
+        { "value": "SSR", "label": "Rendering" },
+        { "value": "1", "label": "Deploy" }
+      ],
       "related": [],
-      "images" : ["nextjs1.png", "nextjs2.png"]
+      "images": ["nextjs1.png"],
+      "githubUrl": "https://github.com/bryle3184/NextJS",
+      "liveUrl": null
+    },
+    {
+      "slug": "multivariate-linear-regression",
+      "title": "Multivariate Linear Regression with Python",
+      "category": "Machine Learning",
+      "year": "2026",
+      "role": "Developer",
+      "duration": "2026",
+      "cover": "indigo",
+      "summary": "A Python implementation of multivariate linear regression for predictive modeling with multiple features.",
+      "overview": "This project implements multivariate linear regression using Python, a statistical method for modeling relationships between a dependent variable and multiple independent variables. The implementation includes data preprocessing, model training, and prediction capabilities.",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "scikit-learn", "NumPy", "Pandas"],
+      "stats": [
+        { "value": "2", "label": "Features" },
+        { "value": "Python", "label": "Language" },
+        { "value": "ML", "label": "Type" }
+      ],
+      "related": [],
+      "images": ["mutivariate-linear-regression1.png"],
+      "githubUrl": "https://github.com/bryle3184/MultivariateLinearRegressionWithPython",
+      "liveUrl": null
+    },
+    {
+      "slug": "linear-regression",
+      "title": "Linear Regression with Python",
+      "category": "Machine Learning",
+      "year": "2026",
+      "role": "Developer",
+      "duration": "2026",
+      "cover": "emerald",
+      "summary": "A simple linear regression example in Python, demonstrating the fundamentals of linear modeling.",
+      "overview": "This project implements simple linear regression using Python, demonstrating the fundamental statistical method for modeling the relationship between a dependent variable and a single independent variable. The implementation includes data visualization and model evaluation.",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "NumPy", "Pandas", "Matplotlib"],
+      "stats": [
+        { "value": "1", "label": "Feature" },
+        { "value": "Python", "label": "Language" },
+        { "value": "Basic", "label": "Level" }
+      ],
+      "related": [],
+      "images": ["linear-regression1.png"],
+      "githubUrl": "https://github.com/bryle3184/LinearRegressionWithPython",
+      "liveUrl": null
+    },
+    {
+      "slug": "face-detection",
+      "title": "Face Detection",
+      "category": "Computer Vision",
+      "year": "2026",
+      "role": "Developer",
+      "duration": "2026",
+      "cover": "amber",
+      "summary": "A computer vision project for detecting human faces in images using OpenCV.",
+      "overview": "This face detection project uses OpenCV to identify and locate human faces within digital images. The implementation leverages pre-trained Haar cascades for real-time face detection, demonstrating fundamental computer vision techniques.",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "OpenCV"],
+      "stats": [
+        { "value": "OpenCV", "label": "Library" },
+        { "value": "CV", "label": "Type" },
+        { "value": "Real-time", "label": "Capability" }
+      ],
+      "related": [],
+      "images": ["face-detection1.png"],
+      "githubUrl": "https://github.com/bryle3184/FaceDetection-OPENCV-",
+      "liveUrl": null
+    },
+    {
+      "slug": "document-scanner",
+      "title": "Document Scanner",
+      "category": "Computer Vision",
+      "year": "2026",
+      "role": "Developer",
+      "duration": "2026",
+      "cover": "charcoal",
+      "summary": "A document scanning application that uses computer vision to capture and enhance document images.",
+      "overview": "This document scanner application uses OpenCV to detect document edges, apply perspective correction, and enhance document images for better readability. The implementation includes edge detection, contour extraction, and image processing techniques.",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "OpenCV"],
+      "stats": [
+        { "value": "OpenCV", "label": "Library" },
+        { "value": "CV", "label": "Type" },
+        { "value": "Enhanced", "label": "Output" }
+      ],
+      "related": [],
+      "images": ["document-scanner1.png", "document-scanner3.png"],
+      "githubUrl": "https://github.com/bryle3184/DocumentScanner-OPENCV-",
+      "liveUrl": null
+    },
+    {
+      "slug": "detecting-fake-news",
+      "title": "Detecting Fake News",
+      "category": "Machine Learning",
+      "year": "2026",
+      "role": "Developer",
+      "duration": "2026",
+      "cover": "electric",
+      "summary": "A machine learning project for detecting fake news articles using natural language processing.",
+      "overview": "This project uses machine learning and natural language processing to classify news articles as real or fake. The implementation trains a classification model on a dataset of labeled news articles and evaluates its performance using standard metrics.",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "scikit-learn", "NLP"],
+      "stats": [
+        { "value": "NLP", "label": "Focus" },
+        { "value": "ML", "label": "Type" },
+        { "value": "Classify", "label": "Function" }
+      ],
+      "related": [],
+      "images": ["detecting-fake-news1.png"],
+      "githubUrl": "https://github.com/bryle3184/DetectingFakeNews",
+      "liveUrl": null
+    },
+    {
+      "slug": "first-machine-learning",
+      "title": "First Machine Learning",
+      "category": "Machine Learning",
+      "year": "2026",
+      "role": "Developer",
+      "duration": "2026",
+      "cover": "cyan",
+      "summary": "An introductory machine learning project exploring fundamental concepts and algorithms.",
+      "overview": "This introductory machine learning project explores fundamental concepts and algorithms in the field. The implementation demonstrates the basic workflow of data loading, model training, and evaluation using Python.",
+      "challenge": "",
+      "approach": "",
+      "outcome": "",
+      "features": [],
+      "technologies": ["Python", "scikit-learn"],
+      "stats": [
+        { "value": "Intro", "label": "Level" },
+        { "value": "Python", "label": "Language" },
+        { "value": "ML", "label": "Type" }
+      ],
+      "related": [],
+      "images": ["first-machine-learning1.png"],
+      "githubUrl": "https://github.com/bryle3184/BasicsOfMachineLearning",
+      "liveUrl": null
     }
   ]
 }

@@ -29,13 +29,13 @@ export default function Home() {
     <div className="min-h-screen">
       <Nav person={data.person} />
       <main>
-        <Hero person={data.person} marquee={data.marquee} />
+        <Hero person={data.person} hero={data.hero} marquee={data.marquee} />
         <Marquee items={data.marquee} />
-        <Projects projects={data.projects} />
         <About person={data.person} principles={data.principles} />
         <Experience experience={data.experience} />
-        <Skills skills={data.skills} />
+        <Skills skills={data.techStack} />
         <Credentials credentials={data.credentials} />
+        <Projects projects={data.projects} />
         <Contact person={data.person} />
       </main>
       <Footer person={data.person} marquee={data.marquee} />

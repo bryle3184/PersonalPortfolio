@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import type { PortfolioData } from "../types";
 
 const SECTIONS = [
-  { n: "01", label: "Work", id: "work" },
+  { n: "01", label: "Home", id: "top" },
   { n: "02", label: "About", id: "about" },
-  { n: "03", label: "Experience", id: "experience" },
-  { n: "04", label: "Skills", id: "skills" },
-  { n: "05", label: "Credentials", id: "credentials" },
-  { n: "06", label: "Contact", id: "contact" },
+  { n: "03", label: "Tech Stack", id: "skills" },
+  { n: "04", label: "Experience", id: "experience" },
+  { n: "05", label: "Projects", id: "work" },
+  { n: "06", label: "Documentation", id: "documentation" },
+  { n: "07", label: "Contact", id: "contact" },
 ];
 
 export default function Nav({ person }: { person: PortfolioData["person"] }) {
@@ -33,19 +34,29 @@ export default function Nav({ person }: { person: PortfolioData["person"] }) {
     navigate("/", { state: { scrollTo: id } });
   };
 
+  const downloadResume = () => {
+    const a = document.createElement("a");
+    a.href = person.resumeUrl || "/files/Reilee-Bryle-Ebuenga-Resume.pdf";
+    a.download = "Reilee-Bryle-Ebuenga-Resume.pdf";
+    a.target = "_blank";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-ink/15 bg-paper/85 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-border bg-paper/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-[1240px] items-center justify-between px-5 sm:px-8">
           <button
             onClick={() => go("top")}
-            className="group flex items-baseline gap-2 font-grotesk text-sm font-semibold uppercase tracking-[0.18em]"
+            className="group flex items-baseline gap-2 font-display text-sm font-semibold uppercase tracking-[0.2em]"
           >
-            {person.name}
-            <span className="text-vermilion">©</span>
-            <span className="text-xs font-normal tracking-[0.14em] text-ink-soft transition-colors group-hover:text-vermilion">
-              Portfolio — {new Date().getFullYear()}
-            </span>
+            Portfolio
+            <span className="text-electric">●</span>
+            {/* <span className="hidden text-xs font-normal tracking-[0.14em] text-ink-soft transition-colors group-hover:text-electric sm:inline-block">
+              Software Developer
+            </span> */}
           </button>
 
           <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
@@ -53,28 +64,28 @@ export default function Nav({ person }: { person: PortfolioData["person"] }) {
               <button
                 key={s.id}
                 onClick={() => go(s.id)}
-                className="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:text-ink"
+                className="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-electric"
               >
-                <span className="text-vermilion/80 tabular-nums group-hover:text-vermilion">{s.n}</span>
+                <span className="text-electric/60 tabular-nums group-hover:text-electric">{s.n}</span>
                 {s.label}
               </button>
             ))}
             <button
-              onClick={() => go("contact")}
-              className="ml-1 inline-flex items-center gap-1.5 border border-ink/25 px-4 py-2 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:bg-ink hover:text-paper"
+              onClick={downloadResume}
+              className="ml-1 inline-flex items-center justify-center gap-1.5 rounded-full border border-electric/30 px-4 py-2 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-electric transition-all duration-300 hover:border-electric hover:bg-electric/10"
             >
-              Let's talk
+              Resume
               <ArrowUpRight className="h-3.5 w-3.5" />
             </button>
           </nav>
 
           <button
             onClick={() => setOpen((v) => !v)}
-            className="flex h-10 w-10 items-center justify-center border border-ink/20 lg:hidden"
+            className="flex h-10 w-10 items-center justify-center border border-border lg:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
           >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {open ? <X className="h-5 w-5 text-ink" /> : <Menu className="h-5 w-5 text-ink" />}
           </button>
         </div>
       </header>
@@ -88,27 +99,29 @@ export default function Nav({ person }: { person: PortfolioData["person"] }) {
         aria-hidden={!open}
       >
         <div className="mx-auto flex w-full max-w-[1240px] items-center justify-between px-5 pt-4 sm:px-8">
-          <span className="font-grotesk text-sm font-semibold uppercase tracking-[0.18em]">{person.name}</span>
+          <span className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-electric">
+            {person.name}
+          </span>
           <button
             onClick={() => setOpen(false)}
-            className="flex h-10 w-10 items-center justify-center border border-ink/20"
+            className="flex h-10 w-10 items-center justify-center border border-border"
             aria-label="Close menu"
           >
-            <X className="h-5 w-5" />
+            <X className="h-5 w-5 text-ink" />
           </button>
         </div>
         <nav className="mx-auto w-full max-w-[1240px] flex-1 px-5 sm:px-8" aria-label="Mobile">
-          <ul className="flex flex-col divide-y divide-ink/10">
+          <ul className="flex flex-col divide-y divide-border">
             {SECTIONS.map((s) => (
               <li key={s.id}>
                 <button
                   onClick={() => go(s.id)}
                   className="group flex w-full items-baseline justify-between py-5 text-left"
                 >
-                  <span className="font-display text-4xl text-ink transition-colors group-hover:text-vermilion">
+                  <span className="font-display text-3xl text-ink transition-colors group-hover:text-electric">
                     {s.label}
                   </span>
-                  <span className="font-grotesk text-xs uppercase tracking-[0.18em] text-ink-soft tabular-nums">
+                  <span className="font-grotesk text-xs uppercase tracking-[0.2em] text-ink-soft tabular-nums">
                     {s.n}
                   </span>
                 </button>
@@ -116,10 +129,13 @@ export default function Nav({ person }: { person: PortfolioData["person"] }) {
             ))}
           </ul>
         </nav>
-        <div className="border-t border-ink/10 px-5 py-6 sm:px-8">
-          <Link to="/" onClick={() => setOpen(false)} className="font-display text-lg italic text-ink">
-            {person.role}
-          </Link>
+        <div className="border-t border-border px-5 py-6 sm:px-8">
+          <button
+            onClick={downloadResume}
+            className="font-display text-lg italic text-electric"
+          >
+            Download Resume
+          </button>
         </div>
       </div>
     </>

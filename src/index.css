@@ -1,21 +1,24 @@
 @import "tailwindcss";
 
 /* ------------------------------------------------------------------
-   THEME — "Printed matter" editorial system
-   Warm paper · ink black · vermilion · olive/pine/brass for covers
+   THEME — "Midnight Code" — Dark charcoal with electric blue/cyan
+   Near-black · Electric blue · Cyan · White · Muted grays
    ------------------------------------------------------------------ */
 @theme {
-  --color-paper: #f1eada;
-  --color-cream: #faf6ea;
-  --color-ink: #1c1811;
-  --color-ink-soft: #6f6753;
-  --color-vermilion: #e0431d;
-  --color-olive: #7c6a3d;
-  --color-pine: #2f5d50;
-  --color-brass: #c07f2d;
+  --color-paper: #0a0f14;      /* Near-black background */
+  --color-cream: #0d141c;      /* Slightly lighter for cards */
+  --color-ink: #e8edf2;        /* Primary text - near white */
+  --color-ink-soft: #8b99a6;   /* Muted text - blue-gray */
+  --color-electric: #00d4ff;   /* Electric cyan accent */
+  --color-cyan: #00ffff;       /* Pure cyan */
+  --color-indigo: #4f46e5;     /* Indigo */
+  --color-emerald: #10b981;    /* Emerald */
+  --color-amber: #f59e0b;      /* Amber */
+  --color-charcoal: #1a232e;   /* Charcoal for cards */
+  --color-border: #1e2a3a;     /* Subtle borders */
 
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
-  --font-grotesk: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-grotesk: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
@@ -24,51 +27,62 @@
   }
   body {
     @apply bg-paper text-ink font-grotesk antialiased;
-    background-image: repeating-linear-gradient(
-      0deg,
-      color-mix(in srgb, var(--color-ink) 2.2%, transparent) 0 1px,
-      transparent 1px 96px
-    );
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, color-mix(in srgb, var(--color-electric) 8%, transparent) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, color-mix(in srgb, var(--color-indigo) 6%, transparent) 0%, transparent 60%);
   }
   ::selection {
-    background: var(--color-vermilion);
-    color: var(--color-cream);
+    background: var(--color-electric);
+    color: var(--color-paper);
   }
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
     background: var(--color-paper);
   }
   ::-webkit-scrollbar-thumb {
-    background: color-mix(in srgb, var(--color-ink) 30%, transparent);
+    background: var(--color-border);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-ink-soft);
   }
 }
 
 @layer components {
   .label {
-    @apply font-grotesk text-[11px] uppercase tracking-[0.24em] text-ink-soft;
+    @apply font-grotesk text-[11px] uppercase tracking-[0.2em] text-ink-soft;
   }
   .chip {
-    @apply inline-flex items-center gap-2 rounded-full border border-ink/15 px-3.5 py-1.5 font-grotesk text-[11px] uppercase tracking-[0.14em] text-ink-soft;
+    @apply inline-flex items-center gap-2 rounded-full border border-electric/20 px-3 py-1.5 font-grotesk text-[11px] uppercase tracking-[0.14em] text-electric/80;
   }
   .input {
     @apply w-full border-b bg-transparent px-0 py-3 font-grotesk text-base text-ink;
-    border-color: color-mix(in srgb, var(--color-ink) 25%, transparent);
+    border-color: var(--color-border);
     transition: border-color 0.3s ease;
   }
   .input:focus {
     outline: none;
-    border-color: var(--color-vermilion);
+    border-color: var(--color-electric);
   }
   .input::placeholder {
-    color: color-mix(in srgb, var(--color-ink-soft) 55%, transparent);
+    color: var(--color-ink-soft);
   }
   .btn-solid {
-    @apply inline-flex items-center justify-center gap-2 bg-ink px-6 py-3.5 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-paper transition-colors duration-300 hover:bg-vermilion;
+    @apply inline-flex items-center justify-center gap-2 bg-electric px-6 py-3.5 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-paper transition-all duration-300 hover:bg-cyan hover:shadow-[0_0_30px_rgba(0,212,255,0.4)];
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 border border-ink/25 px-6 py-3.5 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-ink transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-paper;
+    @apply inline-flex items-center justify-center gap-2 border border-electric/30 px-6 py-3.5 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-electric transition-all duration-300 hover:border-electric hover:bg-electric/10 hover:shadow-[0_0_20px_rgba(0,212,255,0.2)];
+  }
+  .card {
+    @apply bg-cream border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-electric/30 hover:shadow-[0_0_30px_rgba(0,212,255,0.1)];
+  }
+  .section-container {
+    @apply mx-auto max-w-[1240px] px-5 sm:px-8;
+  }
+  .section-header {
+    @apply flex flex-wrap items-end justify-between gap-4;
   }
 }
 
@@ -81,8 +95,69 @@
   }
 }
 
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 42s linear infinite;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.6);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Reveal animation utilities */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-electric);
+  outline-offset: 2px;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
+img[loading="lazy"] {
+  opacity: 0;
+}
+img[loading="lazy"].loaded {
+  opacity: 1;
 }

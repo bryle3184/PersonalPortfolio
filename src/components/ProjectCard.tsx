@@ -1,18 +1,30 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { coverStyles } from "../lib/covers";
 import type { Project } from "../types";
 
 interface ProjectCardProps {
   project: Project;
   index: number;
-  featured?: boolean;
 }
 
-/** A project cover drawn entirely in type and colour — no images needed. */
-export default function ProjectCard({ project, index, featured = false }: ProjectCardProps) {
-  const c = coverStyles[project.cover];
+/** A project card with thumbnail, title, summary, and technology badges. */
+export default function ProjectCard({ project, index }: ProjectCardProps) {
   const num = String(index + 1).padStart(2, "0");
+
+  // Get the first screenshot or fallback to cover color
+  const coverImage = project.images && project.images.length > 0
+    ? `/images/projects/${project.images[0]}`
+    : null;
+
+  const getCategoryBadge = () => {
+    const cat = project.category.toLowerCase();
+    if (cat.includes("machine learning")) return "bg-indigo/20 text-indigo";
+    if (cat.includes("computer vision")) return "bg-emerald/20 text-emerald";
+    if (cat.includes("web")) return "bg-electric/20 text-electric";
+    if (cat.includes("finance")) return "bg-cyan/20 text-cyan";
+    if (cat.includes("system")) return "bg-amber/20 text-amber";
+    return "bg-electric/20 text-electric";
+  };
 
   return (
     <Link
@@ -20,38 +32,66 @@ export default function ProjectCard({ project, index, featured = false }: Projec
       className="group block"
       aria-label={`${project.title} — ${project.category}`}
     >
-      {/* Cover block */}
-      <div className={`relative overflow-hidden ${c.bg} ${c.text} ${featured ? "aspect-[2/1] sm:aspect-[10/5]" : "aspect-[4/3]"}`}>
-        <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-7">
-          <div className={`flex items-start justify-between gap-4 ${c.text}`}>
-            <span className={`${c.chip} rounded-full px-3 py-1 font-grotesk text-[10px] uppercase tracking-[0.16em]`}>
-              {num} — {project.category}
-            </span>
-            <span className="font-grotesk text-xs uppercase tracking-[0.16em] opacity-80">{project.year}</span>
+      <div className="card">
+        {/* Cover image or color block */}
+        {coverImage ? (
+          <div className="relative aspect-[16/9] overflow-hidden bg-charcoal">
+            <img
+              src={coverImage}
+              alt={project.title}
+              className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              onLoad={(e) => e.currentTarget.classList.add("loaded")}
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
           </div>
-          <div className="flex items-end justify-between gap-4">
-            <h3
-              className={`font-display leading-[0.95] tracking-[-0.01em] ${featured ? "text-4xl sm:text-6xl" : "text-3xl sm:text-4xl"}`}
-            >
+        ) : (
+          <div className="flex aspect-[16/9] items-end justify-between p-5 bg-charcoal">
+            <span className="font-grotesk text-xs text-electric/60 tabular-nums">{num}</span>
+            <span className={`rounded-full px-3 py-1 ${getCategoryBadge()}`}>
+              {project.category}
+            </span>
+          </div>
+        )}
+
+        <div className="p-6">
+          <div className="flex items-start justify-between gap-4">
+            <h3 className="font-display text-xl font-light text-ink transition-colors group-hover:text-electric sm:text-2xl">
               {project.title}
             </h3>
-            <span
-              className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${c.chip} transition-transform duration-300 group-hover:rotate-45`}
-            >
-              <ArrowUpRight className={`h-5 w-5 ${c.text}`} />
+            <ArrowUpRight className="h-5 w-5 shrink-0 text-electric/60 transition-transform duration-300 group-hover:translate-x-1" />
+          </div>
+
+          <p className="mt-3 font-grotesk text-sm leading-relaxed text-ink-soft">
+            {project.summary}
+          </p>
+
+          {/* Technology badges */}
+          <div className="mt-4 flex flex-wrap gap-2">
+            {project.technologies.slice(0, 4).map((tech) => (
+              <span
+                key={tech}
+                className="inline-flex items-center rounded-full border border-electric/20 bg-electric/5 px-3 py-1 font-grotesk text-[10px] font-medium uppercase tracking-[0.14em] text-electric/80"
+              >
+                {tech}
+              </span>
+            ))}
+            {project.technologies.length > 4 && (
+              <span className="inline-flex items-center rounded-full border border-electric/20 bg-electric/5 px-3 py-1 font-grotesk text-[10px] font-medium uppercase tracking-[0.14em] text-electric/80">
+                +{project.technologies.length - 4}
+              </span>
+            )}
+          </div>
+
+          <div className="mt-4 flex items-center justify-between border-t border-border pt-4 text-sm">
+            <span className="font-grotesk text-xs uppercase tracking-[0.2em] text-ink-soft">
+              {project.year} · {project.category}
+            </span>
+            <span className="font-display text-sm italic text-electric">
+              View Case Study →
             </span>
           </div>
         </div>
-        {/* hover wash */}
-        <div className="pointer-events-none absolute inset-0 bg-ink opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]" />
-      </div>
-
-      {/* Meta row */}
-      <div className={`flex items-baseline justify-between border-b border-ink/15 pt-3 ${c.rule}`}>
-        <span className="font-display text-base italic text-ink">{project.summary}</span>
-        <span className="shrink-0 font-grotesk text-[11px] uppercase tracking-[0.16em] text-ink-soft">
-          {project.role.split(",")[0]}
-        </span>
       </div>
     </Link>
   );

@@ -1,97 +1,110 @@
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download } from "lucide-react";
 import Reveal from "./Reveal";
 import SectionLabel from "./SectionLabel";
 import type { PortfolioData } from "../types";
 
 interface HeroProps {
   person: PortfolioData["person"];
+  hero: PortfolioData["hero"];
   marquee: string[];
 }
 
-const CONTENTS = [
-  { n: "01", label: "Selected works", note: "Projects", id: "work" },
-  { n: "02", label: "About & principles", note: "a colophon", id: "about" },
-  { n: "03", label: "Experience", note: "2026", id: "experience" },
-  { n: "04", label: "Capabilities", note: "three shelves", id: "skills" },
-  { n: "05", label: "Credentials", note: "Profession", id: "credentials" },
-  { n: "06", label: "Contact", note: "open a thread", id: "contact" },
-];
-
-export default function Hero({ person, marquee }: HeroProps) {
+export default function Hero({ person, hero, marquee }: HeroProps) {
   return (
-    <header id="top" className="border-b border-ink/15">
-      <div className="mx-auto max-w-[1240px] px-5 pb-16 pt-[6.5rem] sm:px-8 lg:pb-24 lg:pt-[8.5rem]">
-        <div className="grid gap-14 lg:grid-cols-12 lg:gap-8">
-          {/* Masthead */}
-          <div className="lg:col-span-8">
+    <header id="top" className="relative border-b border-border">
+      <div className="mx-auto max-w-[1240px] px-5 pb-20 pt-24 sm:px-8 lg:pb-32 lg:pt-40">
+        <div className="grid gap-14 lg:grid-cols-12 lg:gap-12">
+          {/* Hero text */}
+          <div className="lg:col-span-7">
             <Reveal>
-              <SectionLabel index="Vol. 06 — 2026">Independent production</SectionLabel>
+              <SectionLabel index="SOFTWARE DEVELOPER ·">
+                {hero.eyebrow}
+              </SectionLabel>
             </Reveal>
+
             <Reveal delay={80}>
-              <h1 className="mt-8 font-display text-5xl font-light leading-[1.02] tracking-[-0.01em] sm:text-6xl xl:text-[5.25rem]">
-                Personal
-                <em className="font-[400] italic text-vermilion"> portfolio.</em>
+              <h1 className="mt-8 font-display text-4xl font-light leading-[1.02] tracking-[-0.01em] text-ink sm:text-5xl md:text-6xl lg:text-7xl">
+                {hero.headline}
               </h1>
             </Reveal>
+
             <Reveal delay={160}>
-              <p className="mt-8 max-w-xl font-grotesk text-base leading-relaxed text-ink-soft sm:text-lg">
-                {person.bio}
+              <p className="mt-8 max-w-xl font-grotesk text-lg leading-relaxed text-ink-soft sm:text-xl">
+                {hero.subhead}
               </p>
             </Reveal>
+
             <Reveal delay={240}>
-              <p className="mt-4 flex items-center gap-3 font-grotesk text-sm text-ink">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-vermilion opacity-60" />
-                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-vermilion" />
-                </span>
-                {person.availability}
-              </p>
-            </Reveal>
-            <Reveal delay={320}>
               <div className="mt-10 flex flex-wrap items-center gap-4">
-                <a href="#contact" className="btn-solid">
-                  Start a project
-                  <ArrowUpRight className="h-4 w-4" />
+                <a href="#work" className="btn-solid group">
+                  Explore My Work
+                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
-                <a href="#work" className="btn-outline">
-                  See selected works
-                  <ArrowDown className="h-4 w-4" />
+                <a href="#contact" className="btn-outline group">
+                  Contact Me
+                  <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+                </a>
+                <button
+                  onClick={() => {
+                    const a = document.createElement("a");
+                    a.href = person.resumeUrl || "/files/Reilee-Bryle-Ebuenga-Resume.pdf";
+                    a.download = "Reilee-Bryle-Ebuenga-Resume.pdf";
+                    a.target = "_blank";
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                  }}
+                  className="inline-flex items-center justify-center gap-2 border border-electric/30 px-5 py-3 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-electric transition-all duration-300 hover:border-electric hover:bg-electric/10"
+                >
+                  Download Résumé
+                  <Download className="h-4 w-4" />
+                </button>
+              </div>
+            </Reveal>
+
+            <Reveal delay={320}>
+              <div className="mt-8 flex items-center gap-4">
+                <a
+                  href={person.socials[0]?.url || "https://github.com/bryle3184"}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex items-center gap-2 text-sm text-ink-soft transition-colors hover:text-electric"
+                >
+                  <ArrowUpRight className="h-4 w-4 text-electric" />
+                  GitHub Profile
                 </a>
               </div>
             </Reveal>
           </div>
 
-          {/* Contents — editorial index */}
-          <div className="lg:col-span-4">
+          {/* Portrait */}
+          <div className="lg:col-span-5">
             <Reveal delay={200}>
-              <nav className="border-t border-ink/15">
-                <p className="label py-4">Contents</p>
-                <ul>
-                  {CONTENTS.map((c) => (
-                    <li key={c.n} className="border-t border-ink/15">
-                      <a href={`#${c.id}`} className="group flex items-baseline justify-between gap-4 py-3.5">
-                        <span className="flex items-baseline gap-3">
-                          <span className="font-grotesk text-xs text-vermilion tabular-nums">{c.n}</span>
-                          <span className="font-display text-base text-ink transition-colors group-hover:text-vermilion">
-                            {c.label}
-                          </span>
-                        </span>
-                        <span className="hidden font-grotesk text-[10px] uppercase tracking-[0.16em] text-ink-soft sm:block">
-                          {c.note}
-                        </span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+              <div className="relative flex justify-center lg:justify-end">
+                <div className="relative">
+                  <div className="absolute -inset-4 rounded-full bg-electric/10 blur-[60px]"></div>
+                  <div className="absolute -inset-1 rounded-full border-2 border-electric/20"></div>
+                  <div className="absolute -inset-0.5 rounded-full border border-electric/10"></div>
+
+                  <img
+                    src={person.profileImage || "/images/profile.png"}
+                    alt="Reilee Bryle Ebuenga - Software Developer"
+                    className="relative h-72 w-72 rounded-full object-cover object-center ring-2 ring-electric/30 sm:h-80 sm:w-80 lg:h-96 lg:w-96"
+                    loading="eager"
+                    onLoad={(e) => {
+                      e.currentTarget.classList.add("loaded");
+                    }}
+                  />
+                </div>
+              </div>
             </Reveal>
           </div>
         </div>
 
-        {/* Practice keywords */}
+        {/* Marquee / Practice keywords */}
         <Reveal delay={360}>
-          <div className="mt-16 hidden overflow-hidden border-y border-ink/15 py-2 lg:block">
-            <p className="text-center font-grotesk text-[11px] uppercase tracking-[0.3em] text-ink-soft">
+          <div className="mt-20 overflow-hidden border-y border-border py-3">
+            <p className="animate-marquee whitespace-nowrap font-grotesk text-[11px] uppercase tracking-[0.3em] text-ink-soft">
               {marquee.join("  ·  ")}
             </p>
           </div>

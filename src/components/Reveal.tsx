@@ -15,10 +15,17 @@ export default function Reveal({ children, delay = 0, className = "" }: RevealPr
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setVisible(true);
       return;
     }
+
+    if (typeof IntersectionObserver === "undefined") {
+      setVisible(true);
+      return;
+    }
+
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

@@ -1,4 +1,4 @@
-export type Cover = "vermilion" | "ink" | "olive" | "pine" | "brass" | "cream";
+export type Cover = "electric" | "cyan" | "indigo" | "emerald" | "amber" | "charcoal";
 
 export interface Person {
   name: string;
@@ -8,8 +8,15 @@ export interface Person {
   bio: string;
   availability: string;
   resumeUrl: string;
+  profileImage?: string;
   socials: { label: string; url: string }[];
   facts: { label: string; value: string }[];
+}
+
+export interface Hero {
+  eyebrow: string;
+  headline: string;
+  subhead: string;
 }
 
 export interface ExperienceItem {
@@ -20,6 +27,14 @@ export interface ExperienceItem {
   tags: string[];
 }
 
+export interface EducationItem {
+  degree: string;
+  major: string;
+  institution: string;
+  period: string;
+  honors?: string;
+}
+
 export interface Credential {
   type: string;
   title: string;
@@ -27,7 +42,7 @@ export interface Credential {
   year: string;
 }
 
-export interface SkillGroup {
+export interface TechStackCategory {
   category: string;
   items: string[];
   note: string;
@@ -50,16 +65,20 @@ export interface Project {
   technologies: string[];
   stats: { value: string; label: string }[];
   related: string[];
-  /** Relative paths under /src/images/projects, e.g. ["meridian.png"]. */
+  /** Relative paths under /images/projects, e.g. ["meridian.png"]. */
   images?: string[];
+  githubUrl?: string;
+  liveUrl?: string;
 }
 
 export interface PortfolioData {
   person: Person;
+  hero: Hero;
   principles: string[];
   marquee: string[];
   experience: ExperienceItem[];
-  skills: SkillGroup[];
+  education: EducationItem[];
+  techStack: TechStackCategory[];
   credentials: Credential[];
   projects: Project[];
 }

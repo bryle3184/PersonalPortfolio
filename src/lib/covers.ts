@@ -8,41 +8,41 @@ interface CoverStyle {
 }
 
 export const coverStyles: Record<Cover, CoverStyle> = {
-  vermilion: {
-    bg: "bg-vermilion",
+  electric: {
+    bg: "bg-electric",
     text: "text-paper",
-    chip: "bg-paper/15",
-    rule: "border-paper/20",
+    chip: "bg-paper/10",
+    rule: "border-paper/15",
   },
-  cream: {
-    bg: "bg-cream",
+  cyan: {
+    bg: "bg-cyan",
+    text: "text-paper",
+    chip: "bg-paper/10",
+    rule: "border-paper/15",
+  },
+  indigo: {
+    bg: "bg-indigo",
+    text: "text-paper",
+    chip: "bg-paper/10",
+    rule: "border-paper/15",
+  },
+  emerald: {
+    bg: "bg-emerald",
+    text: "text-paper",
+    chip: "bg-paper/10",
+    rule: "border-paper/15",
+  },
+  amber: {
+    bg: "bg-amber",
     text: "text-ink",
     chip: "bg-ink/10",
     rule: "border-ink/15",
   },
-  ink: {
-    bg: "bg-ink",
+  charcoal: {
+    bg: "bg-charcoal",
     text: "text-paper",
-    chip: "bg-paper/15",
-    rule: "border-paper/20",
-  },
-  olive: {
-    bg: "bg-olive",
-    text: "text-cream",
-    chip: "bg-cream/15",
-    rule: "border-cream/20",
-  },
-  pine: {
-    bg: "bg-pine",
-    text: "text-paper",
-    chip: "bg-paper/15",
-    rule: "border-paper/20",
-  },
-  brass: {
-    bg: "bg-brass",
-    text: "text-ink",
-    chip: "bg-ink/10",
-    rule: "border-ink/15",
+    chip: "bg-paper/10",
+    rule: "border-paper/15",
   },
 };
 

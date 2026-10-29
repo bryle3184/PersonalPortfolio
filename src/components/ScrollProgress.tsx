@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-/** A hairline vermilion bar that tracks reading progress down the page. */
+/** A hairline electric bar that tracks reading progress down the page. */
 export default function ScrollProgress() {
   const [progress, setProgress] = useState(0);
 
@@ -17,10 +17,10 @@ export default function ScrollProgress() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-x-0 top-0 z-50 h-[3px] bg-ink/10"
+      className="pointer-events-none fixed inset-x-0 top-0 z-50 h-[3px] bg-border"
     >
       <div
-        className="h-full origin-left bg-vermilion"
+        className="h-full origin-left bg-electric"
         style={{ transform: `scaleX(${progress / 100})` }}
       />
     </div>
