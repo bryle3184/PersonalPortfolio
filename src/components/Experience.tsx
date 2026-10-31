@@ -8,7 +8,7 @@ export default function Experience({ experience }: { experience: PortfolioData["
       <div className="section-container py-16 lg:py-24">
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <SectionLabel index="04">Experience</SectionLabel>
+            <SectionLabel index="03">Experience</SectionLabel>
             <p className="label">{experience.length} engagements</p>
           </div>
         </Reveal>

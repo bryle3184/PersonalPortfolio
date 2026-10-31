@@ -31,11 +31,11 @@ export default function Home() {
       <main>
         <Hero person={data.person} hero={data.hero} marquee={data.marquee} />
         <Marquee items={data.marquee} />
-        <About person={data.person} principles={data.principles} />
-        <Experience experience={data.experience} />
+        {/* <About person={data.person} principles={data.principles} /> */}
         <Skills skills={data.techStack} />
-        <Credentials credentials={data.credentials} />
+        <Experience experience={data.experience} />
         <Projects projects={data.projects} />
+        <Credentials credentials={data.credentials} />
         <Contact person={data.person} />
       </main>
       <Footer person={data.person} marquee={data.marquee} />

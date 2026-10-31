@@ -17,7 +17,7 @@ export default function Credentials({ credentials }: { credentials: PortfolioDat
       <div className="section-container py-16 lg:py-24">
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <SectionLabel index="06">Credentials</SectionLabel>
+            <SectionLabel index="05">Credentials</SectionLabel>
             <p className="label">Degrees & Certificates</p>
           </div>
         </Reveal>

@@ -19,7 +19,7 @@ export default function Projects({ projects }: { projects: PortfolioData["projec
       <div className="section-container py-16 lg:py-24">
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <SectionLabel index="05">Selected Works</SectionLabel>
+            <SectionLabel index="04">Selected Works</SectionLabel>
             <p className="label">{projects.length} Projects</p>
           </div>
         </Reveal>

@@ -9,7 +9,7 @@ export default function Skills({ skills }: { skills: PortfolioData["techStack"] 
       <div className="section-container py-16 lg:py-24">
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <SectionLabel index="03">Tech Stack</SectionLabel>
+            <SectionLabel index="02">Tech Stack</SectionLabel>
             <p className="label">{skills.length} categories</p>
           </div>
         </Reveal>

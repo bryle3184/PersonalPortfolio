@@ -23,7 +23,7 @@ export default function Hero({ person, hero, marquee }: HeroProps) {
             </Reveal>
 
             <Reveal delay={80}>
-              <h1 className="mt-8 font-display text-4xl font-light leading-[1.02] tracking-[-0.01em] text-ink sm:text-5xl md:text-6xl lg:text-7xl">
+              <h1 className="mt-8 font-display text-4xl font-bold leading-[1.02] tracking-[-0.01em] text-ink sm:text-5xl md:text-6xl lg:text-7xl">
                 {hero.headline}
               </h1>
             </Reveal>

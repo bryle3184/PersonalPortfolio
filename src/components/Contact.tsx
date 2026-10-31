@@ -74,7 +74,7 @@ export default function Contact({ person }: { person: PortfolioData["person"] })
       <div className="section-container py-16 lg:py-24">
         <Reveal>
           <p className="label flex items-center gap-3">
-            <span className="text-electric">07</span>
+            <span className="text-electric">06</span>
             <span className="h-px w-8 bg-border" aria-hidden="true" />
             <span>Contact</span>
           </p>
