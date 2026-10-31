@@ -162,9 +162,9 @@
         { "value": "100%", "label": "Completion" }
       ],
       "related": [],
-      "images": [],
+      "images": ["emodulo1.png"],
       "githubUrl": "https://github.com/bryle3184",
-      "liveUrl": null
+      "liveUrl": "https://e-modulo2.vercel.app/"
     },
     {
       "slug": "opac",
@@ -189,7 +189,7 @@
       "related": [],
       "images": ["opac1.png"],
       "githubUrl": "https://github.com/bryle3184/OPAC",
-      "liveUrl": null
+      "liveUrl": "https://opac-rho.vercel.app/"
     },
     {
       "slug": "pos-system",
@@ -214,7 +214,7 @@
       "related": [],
       "images": ["pos1.png"],
       "githubUrl": "https://github.com/bryle3184/POS",
-      "liveUrl": null
+      "liveUrl": "https://pos-peach-delta.vercel.app/"
     },
     {
       "slug": "finance-tracker",
@@ -239,7 +239,7 @@
       "related": [],
       "images": ["finance-tracker1.png"],
       "githubUrl": "https://github.com/bryle3184/FinanceTracker",
-      "liveUrl": null
+      "liveUrl": "https://vercel.com/bryle-ebuengas-projects/finance-tracker"
     },
     {
       "slug": "chat-app",
