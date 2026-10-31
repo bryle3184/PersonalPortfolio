@@ -47,37 +47,40 @@ export default function Nav({ person }: { person: PortfolioData["person"] }) {
   return (
     <>
       <header className="sticky top-0 z-40 border-b border-border bg-paper/85 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-[1240px] items-center justify-between px-5 sm:px-8">
-          <button
-            onClick={() => go("top")}
-            className="group flex items-baseline gap-2 font-display text-sm font-semibold uppercase tracking-[0.2em]"
-          >
-            Portfolio
-            <span className="text-electric">●</span>
-            {/* <span className="hidden text-xs font-normal tracking-[0.14em] text-ink-soft transition-colors group-hover:text-electric sm:inline-block">
-              Software Developer
-            </span> */}
-          </button>
-
-          <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
-            {SECTIONS.map((s) => (
-              <button
-                key={s.id}
-                onClick={() => go(s.id)}
-                className="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-electric"
-              >
-                <span className="text-electric/60 tabular-nums group-hover:text-electric">{s.n}</span>
-                {s.label}
-              </button>
-            ))}
+        <div className="mx-auto flex h-16 max-w-[1240px] items-center justify-between gap-8 px-5 sm:px-8">
+          <div className="flex min-w-0 items-center gap-10 xl:gap-23">
             <button
-              onClick={downloadResume}
-              className="ml-1 inline-flex items-center justify-center gap-1.5 rounded-full border border-electric/30 px-4 py-2 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-electric transition-all duration-300 hover:border-electric hover:bg-electric/10"
+              onClick={() => go("top")}
+              className="group flex items-baseline gap-2 font-display text-sm font-semibold uppercase tracking-[0.2em] whitespace-nowrap"
             >
-              Resume
-              <ArrowUpRight className="h-3.5 w-3.5" />
+              Personal Portfolio
+              <span className="text-electric">●</span>
+              {/* <span className="hidden text-xs font-normal tracking-[0.14em] text-ink-soft transition-colors group-hover:text-electric sm:inline-block">
+                Software Developer
+              </span> */}
             </button>
-          </nav>
+
+            <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+              {SECTIONS.map((s) => (
+                <button
+                  key={s.id}
+                  onClick={() => go(s.id)}
+                  className="group flex items-center gap-1.5 font-grotesk text-[11px] uppercase tracking-[0.2em] whitespace-nowrap text-ink-soft transition-colors hover:text-electric"
+                >
+                  <span className="text-electric/60 tabular-nums group-hover:text-electric">{s.n}</span>
+                  {s.label}
+                </button>
+              ))}
+            </nav>
+          </div>
+
+          <button
+            onClick={downloadResume}
+            className="hidden shrink-0 items-center justify-center gap-1.5 rounded-full border border-electric/30 px-4 py-2 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-electric transition-all duration-300 hover:border-electric hover:bg-electric/10 lg:inline-flex"
+          >
+            Resume
+            <ArrowUpRight className="h-3.5 w-3.5" />
+          </button>
 
           <button
             onClick={() => setOpen((v) => !v)}

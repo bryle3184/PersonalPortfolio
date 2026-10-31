@@ -20,43 +20,49 @@ export default function Contact({ person }: { person: PortfolioData["person"] })
     reset,
     formState: { errors, isSubmitting },
   } = useForm<FormValues>({ mode: "onBlur" });
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sent" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const FORMSPREE_URL = (import.meta.env.VITE_FORMSPREE_ID as string | undefined)
-    ?.replace(/^https?:\/\/formspree\.io\/f\//i, "");
+  // Accept either the bare ID or a full https://formspree.io/f/<id> URL.
+  // The portfolio's form is built in; the env var only overrides it.
+  const overrideId = (import.meta.env.VITE_FORMSPREE_ID as string | undefined)
+    ?.trim()
+    .replace(/^https?:\/\/formspree\.io\/f\//i, "")
+    .replace(/\/+$/, "");
+  const FORMSPREE_ID = overrideId || "meaenwpj";
 
-  const confirm = () => {
-    setSent(true);
+  const markSent = () => {
+    setStatus("sent");
+    setErrorMessage(null);
     reset();
-    window.setTimeout(() => setSent(false), 8000);
+    window.setTimeout(() => setStatus("idle"), 8000);
   };
 
   const onSubmit = async (values: FormValues) => {
+    setErrorMessage(null);
+
     const payload = new FormData();
     payload.append("name", values.name);
     payload.append("email", values.email);
     payload.append("budget", values.budget || "—");
     payload.append("message", values.message);
+    payload.append("_subject", `New inquiry from ${values.name}`);
 
-    // Real backend: Formspree posts the form straight to the owner's inbox.
-    if (FORMSPREE_URL) {
-      try {
-        const res = await fetch(`https://formspree.io/f/${FORMSPREE_URL}`, {
-          method: "POST",
-          body: payload,
-          headers: { Accept: "application/json" },
-        });
-        if (!res.ok) throw new Error(`Formspree responded ${res.status}`);
-        confirm();
-        return;
-      } catch {
-        // Backend unreachable — fall back to the user's own mail client.
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        body: payload,
+        headers: { Accept: "application/json" },
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        throw new Error(data?.errors?.[0]?.message || "Formspree could not accept that message.");
       }
+      markSent();
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(err instanceof Error ? err.message : "Something went wrong sending that.");
     }
-    window.location.href = `mailto:${person.email}?subject=${encodeURIComponent(`Inquiry from ${values.name}`)}&body=${encodeURIComponent(
-      [`Name: ${values.name}`, `Email: ${values.email}`, `Scope: ${values.budget || "—"}`, "", values.message].join("\n")
-    )}`;
-    confirm();
   };
 
   const downloadResume = () => {
@@ -227,13 +233,26 @@ export default function Contact({ person }: { person: PortfolioData["person"] })
                     disabled={isSubmitting}
                     className="inline-flex items-center gap-2 rounded-full bg-electric px-7 py-3.5 font-grotesk text-[11px] font-medium uppercase tracking-[0.18em] text-paper transition-all duration-300 hover:bg-cyan hover:shadow-[0_0_30px_rgba(0,212,255,0.4)] disabled:opacity-60"
                   >
-                    {isSubmitting ? "Setting type..." : sent ? "Sent — noted!" : "Send inquiry"}
-                    {sent ? <Check className="h-4 w-4" /> : <ArrowUpRight className="h-4 w-4" />}
+                    {isSubmitting ? "Setting type..." : status === "sent" ? "Sent — noted!" : "Send inquiry"}
+                    {status === "sent" ? <Check className="h-4 w-4" /> : <ArrowUpRight className="h-4 w-4" />}
                   </button>
                   <p className="font-grotesk text-[11px] uppercase tracking-[0.14em] text-ink-soft">
                     No newsletters, ever
                   </p>
                 </div>
+
+                {status === "error" && (
+                  <p role="alert" className="mt-4 font-grotesk text-xs leading-relaxed text-electric">
+                    {errorMessage} You can also email me directly at{" "}
+                    <a
+                      href={`mailto:${person.email}`}
+                      className="underline decoration-electric/40 underline-offset-2 hover:text-cyan"
+                    >
+                      {person.email}
+                    </a>
+                    .
+                  </p>
+                )}
               </form>
             </Reveal>
           </div>
