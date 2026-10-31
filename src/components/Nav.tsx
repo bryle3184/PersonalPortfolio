@@ -9,8 +9,8 @@ const SECTIONS = [
   { n: "02", label: "Tech Stack", id: "skills" },
   { n: "03", label: "Experience", id: "experience" },
   { n: "04", label: "Projects", id: "work" },
-  { n: "05", label: "Documentation", id: "documentation" },
-  { n: "06", label: "Contact", id: "contact" },
+  // { n: "05", label: "Documentation", id: "documentation" },
+  { n: "05", label: "Contact", id: "contact" },
 ];
 
 export default function Nav({ person }: { person: PortfolioData["person"] }) {
