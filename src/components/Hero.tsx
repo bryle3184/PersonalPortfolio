@@ -12,7 +12,7 @@ interface HeroProps {
 export default function Hero({ person, hero, marquee }: HeroProps) {
   return (
     <header id="top" className="relative border-b border-border">
-      <div className="mx-auto max-w-[1240px] px-5 pb-20 pt-24 sm:px-8 lg:pb-32 lg:pt-40">
+      <div className="mx-auto max-w-[1240px] px-5 pb-20 pt-15 sm:px-8 lg:pb-32">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-12">
           {/* Hero text */}
           <div className="lg:col-span-7">
