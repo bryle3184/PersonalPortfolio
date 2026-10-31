@@ -130,16 +130,16 @@
         "MongoDB database integration for data persistence",
         "Responsive web interface built with Vue.js"
       ],
-      "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "Vue.js", "MongoDB"],
+      "technologies": ["Typescript", "CSS", "React", "MongoDB"],
       "stats": [
         { "value": "3", "label": "Months" },
         { "value": "5+", "label": "Features" },
         { "value": "1", "label": "Database" }
       ],
       "related": [],
-      "images": [],
+      "images": ["TCL1.png"],
       "githubUrl": "https://github.com/bryle3184",
-      "liveUrl": null
+      "liveUrl": "https://tcl-tau.vercel.app/"
     },
     {
       "slug": "emodulo",
